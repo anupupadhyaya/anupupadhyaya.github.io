@@ -1,14 +1,12 @@
 ---
-title: "Paper Title Number 2"
+title: "Glacial Lake Outburst Floods (GLOFs) Susceptibility in the Northwest Himalayas using AHP-TOPSIS and AHP-COPRAS"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+permalink: /publication/2025-glofs-susceptibility
+excerpt: 'MCDM-based susceptibility assessment of GLOFs in the Northwest Himalayas using AHP-TOPSIS and AHP-COPRAS methods.'
+date: 2025-01-01
+venue: 'Environmental Science and Pollution Research'
+paperurl: 'https://doi.org/10.1007/s11356-025-36346-y'
+citation: 'Anup Upadhyaya and Abhishek K. Rai (2025). &quot;Glacial Lake Outburst Floods (GLOFs) Susceptibility in the Northwest Himalayas using AHP-TOPSIS and AHP-COPRAS.&quot; <i>Environmental Science and Pollution Research</i>.'
 ---
-
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+[Download/View Paper](https://doi.org/10.1007/s11356-025-36346-y)
