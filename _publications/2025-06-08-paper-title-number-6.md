@@ -1,4 +1,3 @@
-
 ---
 title: "Analysis of Heat Stress and Heat wave in the four Metropolitan Cities of India in recent period"
 collection: publications
