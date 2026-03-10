@@ -1,14 +1,13 @@
 ---
-title: "Paper Title Number 1"
+title: "Record Breaking Heatwave of 2022 over the Northwest Himalayas of India: Drivers and Implications"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://academicpages.github.io/files/paper1.pdf'
-bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2026-heatwave-2022-nw-himalayas
+excerpt: 'Analysis of the unprecedented 2022 heatwave over the Northwest Himalayas, examining its drivers and implications.'
+date: 2026-02-16
+venue: 'Natural Hazards'
+status: 'In Press'
+paperurl: ''
+citation: 'Anup Upadhyaya and Abhishek K. Rai (2026). &quot;Record Breaking Heatwave of 2022 over the Northwest Himalayas of India: Drivers and Implications.&quot; <i>Natural Hazards</i>. (In Press)'
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Accepted: 16 February 2026. This study analyzes the record-breaking heatwave of 2022 over the Northwest Himalayas, investigating its meteorological drivers and broader implications for the region.
