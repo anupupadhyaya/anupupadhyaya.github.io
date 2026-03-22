@@ -2,7 +2,7 @@
 layout: single
 title: " "
 permalink: /photography/
-author_profile: true
+author_profile: false
 ---
 
 <style>
