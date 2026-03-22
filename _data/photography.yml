@@ -1,1 +1,44 @@
 
+treks:
+  - file: photography/treks/trek1.jpg
+    location: "Hampta Pass, Himachal Pradesh"
+    caption: "First light over the pass at 4270m"
+    year: 2022
+
+travels:
+  - file: photography/travels/vienna1.jpg
+    location: "Vienna, Austria"
+    caption: "After EGU 2024 — Belvedere Palace"
+    year: 2024
+
+  - file: photography/travels/prague1.jpg
+    location: "Prague, Czech Republic"
+    caption: "Charles Bridge at dusk"
+    year: 2024
+
+  - file: photography/travels/bratislava1.jpg
+    location: "Bratislava, Slovakia"
+    caption: "Old Town at golden hour"
+    year: 2024
+
+  - file: photography/travels/newyork1.jpg
+    location: "New York, USA"
+    caption: "AGU 2023 — Manhattan skyline"
+    year: 2023
+
+  - file: photography/travels/washington1.jpg
+    location: "Washington D.C., USA"
+    caption: "AGU 2023 — The National Mall"
+    year: 2023
+
+wildlife:
+  - file: photography/wildlife/wildlife1.jpg
+    location: "Your location"
+    caption: "Your caption here"
+    year: 2023
+
+nature:
+  - file: photography/nature/nature1.jpg
+    location: "Your location"
+    caption: "Your caption here"
+    year: 2023
