@@ -1,0 +1,76 @@
+/* ==========================================================================
+   SIDEBAR — Flexbox-based layout (fixes float overlap)
+   ========================================================================== */
+
+.sidebar {
+  flex-shrink: 0;
+  width: 220px;
+  padding-right: 1.5em;
+}
+
+.sidebar.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  /* top clears the fixed masthead (~56px) + breathing room */
+  top: 4.5em;
+  overflow-y: auto;
+  max-height: calc(100vh - 5.5em);
+  align-self: flex-start;
+}
+
+/* On screens narrower than 64em, collapse sidebar above content */
+@media screen and (max-width: 63.9375em) {
+  #main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--global-border-color);
+    margin-bottom: 1.5em;
+  }
+
+  .sidebar.sticky {
+    position: static;
+    max-height: none;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  /* Switch #main to flexbox so sidebar and content sit side by side
+     without any overlap — no more float+margin-left trick needed */
+  #main {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 0;
+    /* Remove any legacy margin-left that was compensating for the float */
+    margin-left: auto !important;
+    float: none !important;
+    width: auto !important;
+  }
+
+  .sidebar {
+    flex: 0 0 220px;
+    width: 220px;
+    min-width: 0;
+  }
+
+  .page {
+    flex: 1;
+    min-width: 0;
+    width: auto !important;
+    float: none !important;
+    /* Remove Susy-generated padding/prefix that conflicts with flex */
+    padding-left: 2em;
+    padding-right: 1em;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .sidebar {
+    flex: 0 0 240px;
+    width: 240px;
+  }
+}
