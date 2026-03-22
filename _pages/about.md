@@ -7,15 +7,25 @@ redirect_from:
   - /about.html
 ---
 
-I am a **Prime Minister's Research Fellow** and PhD Candidate at the [Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)](https://www.iitkgp.ac.in), **Indian Institute of Technology Kharagpur**, India (2019–present), working under the supervision of Dr. Abhishek K. Rai.
+I am a **Prime Minister's Research Fellow** and PhD Candidate at the [Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)](https://www.iitkgp.ac.in), **Indian Institute of Technology Kharagpur**, India (2019–present), working under the supervision of [Dr. Abhishek K. Rai](mailto:abhishek@coral.iitkgp.ac.in).
 
-My research focuses on **climate change and extreme events** in the Himalayan region, particularly:
-- 🌡️ Heatwaves and extreme temperature events
-- 🌧️ Extreme precipitation and rainfall variability
-- 🏔️ Glacial Lake Outburst Floods (GLOFs)
-- ⛰️ Landslide susceptibility modeling
+My research addresses the growing threat of **climate extremes and associated natural hazards** in the Northwest Himalayan region of India — integrating statistical analysis, machine learning, geospatial modelling, and hydrodynamic simulations to understand and anticipate disaster risk in one of the world's most climate-sensitive landscapes.
 
-I integrate **statistical analysis, machine learning (Python & R), and geospatial techniques** (ArcGIS, QGIS, Google Earth Engine) with climate datasets including CMIP6 projections and reanalysis products.
+---
+
+## PhD Research
+
+The Himalayas are warming fast, and my work tries to understand what that 
+means for the people living downstream.
+
+I study how heatwaves and extreme rainfall have changed across the Northwest 
+Himalayas, and where they are headed under future climate scenarios. From 
+there, I look at what these extremes trigger on the ground: unstable slopes, 
+dangerous glacial lakes, and catastrophic floods.
+
+The work moves from atmosphere to hillslope to river valley, using climate 
+models, machine learning, remote sensing, and flood simulation to connect a 
+warming climate to real risks faced by Himalayan communities.
 
 ---
 
@@ -23,7 +33,7 @@ I integrate **statistical analysis, machine learning (Python & R), and geospatia
 
 | Degree | Institution | Year |
 |--------|-------------|------|
-| Ph.D. (Climate & Extreme Events) | IIT Kharagpur | 2019–Present |
+| Ph.D. — Climate Change & Extreme Events | IIT Kharagpur | 2019–Present |
 | M.Sc. Applied Geology *(Gold Medallist, CGPA: 8.62)* | University of Mysore | 2017–2019 |
 | M.Sc. Geoinformatics *(CGPA: 8.64)* | BIT Mesra, Ranchi | 2012–2014 |
 | B.Sc. Hons. Geology | University of Delhi | 2009–2012 |
@@ -33,45 +43,31 @@ I integrate **statistical analysis, machine learning (Python & R), and geospatia
 ## Work Experience
 
 **Consultant (Statistical Analyst)** — Ministry of Environment, Forest and Climate Change (MoEFCC), New Delhi *(June–September 2025)*
-- Analyzed global indices: Environmental Performance Index & Climate Change Performance Index
-- Reviewed UN technical reports and provided statistical inputs
+- Analysed global indices including the Environmental Performance Index and Climate Change Performance Index
+- Reviewed UN technical reports and provided statistical inputs for national climate assessments
 
 **PhD Research Fellow** — IIT Kharagpur *(July 2019–Present)*
-- Statistical analysis of extreme climate events, GLOFs, and landslide susceptibility in NW Himalayas
-- High-performance computing using IIT Kharagpur's Param Shakti facility (WRF model)
+- Statistical analysis of extreme climate events, GLOFs, and landslide susceptibility in the NW Himalayas
+- High-performance computing using IIT Kharagpur's Param Shakti facility (WRF model runs)
 
 **Junior Research Fellow** — G.B. Pant National Institute of Himalayan Environment, Almora *(December 2014–July 2015)*
-- Forest cover modeling using remote sensing and GIS for Manas Biosphere Reserve
+- Forest cover modelling using remote sensing and GIS for Manas Biosphere Reserve, Assam
 
 ---
 
 ## Academic Achievements
 
 - 🏆 **Prime Minister's Research Fellow** (December 2020)
-- 🏅 **Best Oral Presentation Award**, Research Scholar Day, CORAL, IIT Kharagpur (January 2024)
-- 🥇 **Gold Medal**, M.Sc. Applied Geology, University of Mysore (2019)
+- 🏅 **Best Oral Presentation Award** — Research Scholar Day, CORAL, IIT Kharagpur (January 2024)
+- 🥇 **Gold Medal** — M.Sc. Applied Geology, University of Mysore (2019)
 - ✅ **GATE 2019**: AIR 430, Score 487
-- ✅ **KSET 2018** (Karnataka State Eligibility Test for Lectureship)
+- ✅ **KSET 2018** — Karnataka State Eligibility Test for Lectureship
 
 ---
 
 ## Skills
 
-- **Programming**: Python, R
+- **Programming**: Python, R (statistical modelling, machine learning, data analysis)
 - **Geospatial**: ArcGIS, QGIS, SNAP, Google Earth Engine
-- **Climate Modeling**: WRF, HEC-RAS, CMIP6
-- **Methods**: Machine Learning, MCDM (AHP-TOPSIS, AHP-COPRAS), Trend Analysis, Return Period Analysis
-
----
-
-## PhD Research Overview
-
-My doctoral research addresses the growing threat of climate extremes and associated natural hazards in the **Northwest Himalayan region of India**. The work spans three interconnected themes:
-
-<div class="obj-card"><p><strong>Objective 1 — Climate Extremes & Future Projections:</strong> Spatio-temporal analysis of heatwave indices and extreme precipitation trends using bias-corrected CMIP6 models under multiple SSP scenarios.</p></div>
-
-<div class="obj-card"><p><strong>Objective 2 — Hazard Susceptibility Mapping:</strong> Landslide susceptibility assessment via machine learning (Upper Ganga Basin) and GLOF susceptibility mapping using AHP-TOPSIS and AHP-COPRAS for the Northwest Himalayas.</p></div>
-
-<div class="obj-card"><p><strong>Objective 3 — Hydrodynamic Flood Modelling:</strong> HEC-RAS 2D modelling of GLOF scenarios from high-priority glacial lakes to map downstream flood extent, water depth, flow velocity, and risk zones.</p></div>
-
-The thesis integrates reanalysis products, remote sensing datasets, digital elevation models, and CMIP6 climate projections — combining statistical rigour with geospatial and computational tools to inform disaster risk management in the Himalayas.
+- **Climate & Hydrologic Modelling**: WRF, HEC-RAS 2D, CMIP6
+- **Methods**: Machine Learning, MCDM (AHP-TOPSIS, AHP-COPRAS), Trend & Return Period Analysis
