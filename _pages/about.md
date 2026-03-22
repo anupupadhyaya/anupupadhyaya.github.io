@@ -61,3 +61,17 @@ I integrate **statistical analysis, machine learning (Python & R), and geospatia
 - **Geospatial**: ArcGIS, QGIS, SNAP, Google Earth Engine
 - **Climate Modeling**: WRF, HEC-RAS, CMIP6
 - **Methods**: Machine Learning, MCDM (AHP-TOPSIS, AHP-COPRAS), Trend Analysis, Return Period Analysis
+
+---
+
+## PhD Research Overview
+
+My doctoral research addresses the growing threat of climate extremes and associated natural hazards in the **Northwest Himalayan region of India**. The work spans three interconnected themes:
+
+<div class="obj-card"><p><strong>Objective 1 — Climate Extremes & Future Projections:</strong> Spatio-temporal analysis of heatwave indices and extreme precipitation trends using bias-corrected CMIP6 models under multiple SSP scenarios.</p></div>
+
+<div class="obj-card"><p><strong>Objective 2 — Hazard Susceptibility Mapping:</strong> Landslide susceptibility assessment via machine learning (Upper Ganga Basin) and GLOF susceptibility mapping using AHP-TOPSIS and AHP-COPRAS for the Northwest Himalayas.</p></div>
+
+<div class="obj-card"><p><strong>Objective 3 — Hydrodynamic Flood Modelling:</strong> HEC-RAS 2D modelling of GLOF scenarios from high-priority glacial lakes to map downstream flood extent, water depth, flow velocity, and risk zones.</p></div>
+
+The thesis integrates reanalysis products, remote sensing datasets, digital elevation models, and CMIP6 climate projections — combining statistical rigour with geospatial and computational tools to inform disaster risk management in the Himalayas.
