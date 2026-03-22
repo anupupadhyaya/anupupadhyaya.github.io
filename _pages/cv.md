@@ -1,17 +1,17 @@
 ---
-layout: archive
+layout: single
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
-
-{% include base_path %}
 
 Download my CV: [📄 PDF](/files/cv.pdf)
 
-<iframe src="/files/cv.pdf" width="100%" height="900px" style="border:none;">
+<iframe 
+  src="https://anupupadhyaya.github.io/files/cv.pdf" 
+  width="100%" 
+  height="900px" 
+  style="border:none;">
   This browser does not support PDFs. 
   <a href="/files/cv.pdf">Download the PDF</a>
 </iframe>
@@ -41,22 +41,6 @@ Download my CV: [📄 PDF](/files/cv.pdf)
 * **Geospatial**: ArcGIS, QGIS, SNAP, Google Earth Engine
 * **Climate Modeling**: WRF, HEC-RAS, CMIP6
 * **Methods**: Machine Learning, MCDM, Trend Analysis
-
----
-
-## Publications
-
-{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}
-
----
-
-## Talks
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk-cv.html %}
-{% endfor %}
 
 ---
 
