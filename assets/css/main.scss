@@ -41,3 +41,30 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* ================================
+   Custom Fix: Sidebar Overlap
+   ================================ */
+
+.sidebar.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
+  float: left;
+  overflow-y: auto;
+  max-height: calc(100vh - 4em);
+  z-index: 1;
+}
+
+@media (min-width: 64em) {
+  .sidebar {
+    width: calc(200px - 1em);
+    padding-right: 1em;
+  }
+
+  .page {
+    float: right;
+    width: calc(100% - 200px);
+    padding-left: 1em;
+  }
+}
