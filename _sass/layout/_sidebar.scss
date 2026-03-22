@@ -1,47 +1,22 @@
----
----
-
-@import "vendor/breakpoint/breakpoint";
-@import "themes";
-@import "theme/{{ site.site_theme | default: 'default' | append: '_light' }}";
-@import "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}";
-@import "include/mixins";
-@import "vendor/susy/susy";
-@import "layout/reset";
-@import "layout/base";
-@import "include/utilities";
-@import "layout/tables";
-@import "layout/buttons";
-@import "layout/notices";
-@import "layout/masthead";
-@import "layout/navigation";
-@import "layout/footer";
-@import "syntax";
-@import "layout/forms";
-@import "layout/page";
-@import "layout/archive";
-@import "layout/sidebar";
-@import "layout/json_cv";
-@import "vendor/font-awesome/fontawesome";
-@import "vendor/font-awesome/solid";
-@import "vendor/font-awesome/brands";
-
-/* ================================
-   Custom Fix: Sidebar Overlap
-   ================================ */
-
-@media screen and (min-width: 64em) {
-  #main {
-    margin-left: 220px;
-  }
-  .page {
-    width: 100%;
-    padding-left: 1em;
-  }
+.sidebar.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
+  float: left;
+  overflow-y: auto;
+  max-height: calc(100vh - 4em);
+  z-index: 1;
 }
 
-@media screen and (min-width: 80em) {
-  #main {
-    margin-left: 260px;
+@media (min-width: 64em) {
+  .sidebar {
+    width: calc(200px - 1em);
+    padding-right: 1em;
+  }
+
+  .page {
+    float: right;
+    width: calc(100% - 200px);
+    padding-left: 1em;
   }
 }
