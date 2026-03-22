@@ -1,10 +1,6 @@
 ---
 ---
 
-/*
- * Main SCSS entry point for Jekyll
- */
-
 @import "vendor/breakpoint/breakpoint";
 @import "themes";
 @import "theme/{{ site.site_theme | default: 'default' | append: '_light' }}";
@@ -29,23 +25,3 @@
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
-
-/* ================================
-   Custom Fix: Sidebar Overlap
-   ================================ */
-
-@media screen and (min-width: 64em) {
-  #main {
-    margin-left: 220px;
-  }
-  .page {
-    width: 100%;
-    padding-left: 1em;
-  }
-}
-
-@media screen and (min-width: 80em) {
-  #main {
-    margin-left: 260px;
-  }
-}
