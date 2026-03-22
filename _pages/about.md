@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD Candidate (**Prime Minister's Research Fellow**) at the Centre for Ocean, River, Atmosphere and Land Sciences (CORAL), [**Indian Institute of Technology Kharagpur**] (https://www.iitkgp.ac.in), India (2019 to present), working under the supervision of [Dr. Abhishek K. Rai](https://www.iitkgp.ac.in/department/CL/faculty/cl-abhishek).
+I am a PhD Candidate (**Prime Minister's Research Fellow**) at the Centre for Ocean, River, Atmosphere and Land Sciences (CORAL), [**Indian Institute of Technology Kharagpur**](https://www.iitkgp.ac.in), India (2019 to present), working under the supervision of [Dr. Abhishek K. Rai](https://www.iitkgp.ac.in/department/CL/faculty/cl-abhishek).
 
 My research addresses the growing threat of **climate extremes and associated natural hazards** in the Northwest Himalayan region of India, integrating statistical analysis, machine learning, geospatial modelling, and hydrodynamic simulations to understand and anticipate disaster risk in one of the world's most climate-sensitive landscapes.
 
