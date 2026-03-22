@@ -354,43 +354,27 @@ author_profile: true
      Section Jump Tabs
      ================== -->
 <div class="section-tabs">
-  <a href="#treks" class="section-tab">
-    🏔️ &nbsp; Treks
-  </a>
-  <a href="#travels" class="section-tab">
-    🌍 &nbsp; Travels
-  </a>
-  <a href="#wildlife" class="section-tab">
-    🦅 &nbsp; Wildlife
-  </a>
-  <a href="#nature" class="section-tab">
-    🌿 &nbsp; Nature
-  </a>
-  <a href="#human" class="section-tab">
-    🧍 &nbsp; Human Emotions
-  </a>
+  <a href="#treks" class="section-tab">🏔️ &nbsp; Treks</a>
+  <a href="#travels" class="section-tab">🌍 &nbsp; Travels</a>
+  <a href="#wildlife" class="section-tab">🦅 &nbsp; Wildlife</a>
+  <a href="#nature" class="section-tab">🌿 &nbsp; Nature</a>
+  <a href="#human" class="section-tab">🧍 &nbsp; Human Emotions</a>
 </div>
 
 <!-- ==================
      Lightbox
      ================== -->
 <div class="lightbox-overlay" id="lightbox">
-  <button class="lightbox-close"
-          onclick="closeLightbox()">✕</button>
-  <button class="lightbox-nav lightbox-prev"
-          onclick="changePhoto(-1)">&#8249;</button>
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button class="lightbox-nav lightbox-prev" onclick="changePhoto(-1)">&#8249;</button>
   <div class="lightbox-counter" id="lightbox-counter"></div>
   <img id="lightbox-img" src="" alt="">
   <div class="lightbox-meta">
-    <span class="lightbox-location" 
-          id="lightbox-location"></span>
-    <div class="lightbox-caption" 
-         id="lightbox-caption"></div>
-    <span class="lightbox-year" 
-          id="lightbox-year"></span>
+    <span class="lightbox-location" id="lightbox-location"></span>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <span class="lightbox-year" id="lightbox-year"></span>
   </div>
-  <button class="lightbox-nav lightbox-next"
-          onclick="changePhoto(1)">&#8250;</button>
+  <button class="lightbox-nav lightbox-next" onclick="changePhoto(1)">&#8250;</button>
 </div>
 
 <!-- ==================
@@ -398,19 +382,13 @@ author_profile: true
      ================== -->
 <div id="treks"></div>
 <div class="section-title">🏔️ &nbsp; Treks</div>
-<p class="section-desc">
-  High passes, glacial moraines and silences 
-  that only mountains know
-</p>
+<p class="section-desc">High passes, glacial moraines and silences that only mountains know</p>
 
 <div class="masonry-grid">
 {% assign trek_start = 0 %}
 {% for photo in site.data.photography.treks %}
-  <div class="masonry-item"
-       onclick="openLightbox({{ trek_start | plus: forloop.index0 }})">
-    <img src="/images/{{ photo.file }}"
-         alt="{{ photo.location }}"
-         loading="lazy">
+  <div class="masonry-item" onclick="openLightbox({{ trek_start | plus: forloop.index0 }})">
+    <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
     <div class="masonry-caption">
       <span>{{ photo.location }}</span>
       <p>{{ photo.caption }}</p>
@@ -424,19 +402,13 @@ author_profile: true
      ================== -->
 <div id="travels"></div>
 <div class="section-title">🌍 &nbsp; Travels</div>
-<p class="section-desc">
-  From Himalayan valleys to European cobblestones 
-  and American skylines
-</p>
+<p class="section-desc">From Himalayan valleys to European cobblestones and American skylines</p>
 
 <div class="masonry-grid">
 {% assign travel_start = site.data.photography.treks | size %}
 {% for photo in site.data.photography.travels %}
-  <div class="masonry-item"
-       onclick="openLightbox({{ travel_start | plus: forloop.index0 }})">
-    <img src="/images/{{ photo.file }}"
-         alt="{{ photo.location }}"
-         loading="lazy">
+  <div class="masonry-item" onclick="openLightbox({{ travel_start | plus: forloop.index0 }})">
+    <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
     <div class="masonry-caption">
       <span>{{ photo.location }}</span>
       <p>{{ photo.caption }}</p>
@@ -450,20 +422,15 @@ author_profile: true
      ================== -->
 <div id="wildlife"></div>
 <div class="section-title">🦅 &nbsp; Wildlife</div>
-<p class="section-desc">
-  Creatures that share this planet — 
-  caught in an unguarded moment
-</p>
+<p class="section-desc">Creatures that share this planet — caught in an unguarded moment</p>
 
 <div class="masonry-grid">
-{% assign wildlife_start = site.data.photography.treks | size 
-   | plus: site.data.photography.travels | size %}
+{% assign t_size = site.data.photography.treks | size %}
+{% assign tr_size = site.data.photography.travels | size %}
+{% assign wildlife_start = t_size | plus: tr_size %}
 {% for photo in site.data.photography.wildlife %}
-  <div class="masonry-item"
-       onclick="openLightbox({{ wildlife_start | plus: forloop.index0 }})">
-    <img src="/images/{{ photo.file }}"
-         alt="{{ photo.location }}"
-         loading="lazy">
+  <div class="masonry-item" onclick="openLightbox({{ wildlife_start | plus: forloop.index0 }})">
+    <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
     <div class="masonry-caption">
       <span>{{ photo.location }}</span>
       <p>{{ photo.caption }}</p>
@@ -477,21 +444,16 @@ author_profile: true
      ================== -->
 <div id="nature"></div>
 <div class="section-title">🌿 &nbsp; Nature</div>
-<p class="section-desc">
-  Flowers, skies, seasons and the 
-  quiet drama of the natural world
-</p>
+<p class="section-desc">Flowers, skies, seasons and the quiet drama of the natural world</p>
 
 <div class="masonry-grid">
-{% assign nature_start = site.data.photography.treks | size
-   | plus: site.data.photography.travels | size
-   | plus: site.data.photography.wildlife | size %}
+{% assign t_size = site.data.photography.treks | size %}
+{% assign tr_size = site.data.photography.travels | size %}
+{% assign w_size = site.data.photography.wildlife | size %}
+{% assign nature_start = t_size | plus: tr_size | plus: w_size %}
 {% for photo in site.data.photography.nature %}
-  <div class="masonry-item"
-       onclick="openLightbox({{ nature_start | plus: forloop.index0 }})">
-    <img src="/images/{{ photo.file }}"
-         alt="{{ photo.location }}"
-         loading="lazy">
+  <div class="masonry-item" onclick="openLightbox({{ nature_start | plus: forloop.index0 }})">
+    <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
     <div class="masonry-caption">
       <span>{{ photo.location }}</span>
       <p>{{ photo.caption }}</p>
@@ -505,22 +467,17 @@ author_profile: true
      ================== -->
 <div id="human"></div>
 <div class="section-title">🧍 &nbsp; Human Emotions</div>
-<p class="section-desc">
-  Strangers in motion — streets, fields, 
-  laughter and the in-between moments
-</p>
+<p class="section-desc">Strangers in motion — streets, fields, laughter and the in-between moments</p>
 
 <div class="masonry-grid">
-{% assign human_start = site.data.photography.treks | size
-   | plus: site.data.photography.travels | size
-   | plus: site.data.photography.wildlife | size
-   | plus: site.data.photography.nature | size %}
+{% assign t_size = site.data.photography.treks | size %}
+{% assign tr_size = site.data.photography.travels | size %}
+{% assign w_size = site.data.photography.wildlife | size %}
+{% assign n_size = site.data.photography.nature | size %}
+{% assign human_start = t_size | plus: tr_size | plus: w_size | plus: n_size %}
 {% for photo in site.data.photography.human %}
-  <div class="masonry-item"
-       onclick="openLightbox({{ human_start | plus: forloop.index0 }})">
-    <img src="/images/{{ photo.file }}"
-         alt="{{ photo.location }}"
-         loading="lazy">
+  <div class="masonry-item" onclick="openLightbox({{ human_start | plus: forloop.index0 }})">
+    <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
     <div class="masonry-caption">
       <span>{{ photo.location }}</span>
       <p>{{ photo.caption }}</p>
@@ -592,43 +549,33 @@ let currentPhoto = 0;
 function openLightbox(index) {
   currentPhoto = index;
   updateLightbox();
-  document.getElementById('lightbox')
-    .classList.add('active');
+  document.getElementById('lightbox').classList.add('active');
   document.body.style.overflow = 'hidden';
 }
 
 function updateLightbox() {
   const photo = photos[currentPhoto];
-  document.getElementById('lightbox-img')
-    .src = photo.src;
-  document.getElementById('lightbox-caption')
-    .textContent = photo.caption;
-  document.getElementById('lightbox-location')
-    .textContent = photo.location;
-  document.getElementById('lightbox-year')
-    .textContent = photo.year;
-  document.getElementById('lightbox-counter')
-    .textContent = (currentPhoto + 1) 
-    + ' / ' + photos.length;
+  document.getElementById('lightbox-img').src = photo.src;
+  document.getElementById('lightbox-caption').textContent = photo.caption;
+  document.getElementById('lightbox-location').textContent = photo.location;
+  document.getElementById('lightbox-year').textContent = photo.year;
+  document.getElementById('lightbox-counter').textContent = 
+    (currentPhoto + 1) + ' / ' + photos.length;
 }
 
 function closeLightbox() {
-  document.getElementById('lightbox')
-    .classList.remove('active');
+  document.getElementById('lightbox').classList.remove('active');
   document.body.style.overflow = '';
 }
 
 function changePhoto(direction) {
-  currentPhoto =
-    (currentPhoto + direction + photos.length)
-    % photos.length;
+  currentPhoto = (currentPhoto + direction + photos.length) % photos.length;
   updateLightbox();
 }
 
-document.getElementById('lightbox')
-  .addEventListener('click', function(e) {
-    if (e.target === this) closeLightbox();
-  });
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) closeLightbox();
+});
 
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') closeLightbox();
