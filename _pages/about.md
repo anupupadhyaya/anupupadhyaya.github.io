@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a **Prime Minister's Research Fellow** and PhD Candidate at the [Centre for Ocean, River, Atmosphere and Land Sciences (CORAL)](https://www.iitkgp.ac.in), **Indian Institute of Technology Kharagpur**, India (2019–present), working under the supervision of [Dr. Abhishek K. Rai](mailto:abhishek@coral.iitkgp.ac.in).
+I am a PhD Candidate (**Prime Minister's Research Fellow**) at the Centre for Ocean, River, Atmosphere and Land Sciences (CORAL), [**Indian Institute of Technology Kharagpur**] (https://www.iitkgp.ac.in), India (2019 to present), working under the supervision of [Dr. Abhishek K. Rai](https://www.iitkgp.ac.in/department/CL/faculty/cl-abhishek).
 
-My research addresses the growing threat of **climate extremes and associated natural hazards** in the Northwest Himalayan region of India — integrating statistical analysis, machine learning, geospatial modelling, and hydrodynamic simulations to understand and anticipate disaster risk in one of the world's most climate-sensitive landscapes.
+My research addresses the growing threat of **climate extremes and associated natural hazards** in the Northwest Himalayan region of India, integrating statistical analysis, machine learning, geospatial modelling, and hydrodynamic simulations to understand and anticipate disaster risk in one of the world's most climate-sensitive landscapes.
 
 ---
 
@@ -33,24 +33,24 @@ warming climate to real risks faced by Himalayan communities.
 
 | Degree | Institution | Year |
 |--------|-------------|------|
-| Ph.D. — Climate Change & Extreme Events | IIT Kharagpur | 2019–Present |
-| M.Sc. Applied Geology *(Gold Medallist, CGPA: 8.62)* | University of Mysore | 2017–2019 |
-| M.Sc. Geoinformatics *(CGPA: 8.64)* | BIT Mesra, Ranchi | 2012–2014 |
-| B.Sc. Hons. Geology | University of Delhi | 2009–2012 |
+| Ph.D. in Climate Change & Extreme Events | IIT Kharagpur | 2019 to Present |
+| M.Sc. Applied Geology *(Gold Medallist, CGPA: 8.62)* | University of Mysore | 2017 to 2019 |
+| M.Sc. Geoinformatics *(CGPA: 8.64)* | BIT Mesra, Ranchi | 2012 to 2014 |
+| B.Sc. Hons. Geology | University of Delhi | 2009 to 2012 |
 
 ---
 
 ## Work Experience
 
-**Consultant (Statistical Analyst)** — Ministry of Environment, Forest and Climate Change (MoEFCC), New Delhi *(June–September 2025)*
+**Consultant (Statistical Analyst)** — Ministry of Environment, Forest and Climate Change (MoEFCC), New Delhi *(June to September 2025)*
 - Analysed global indices including the Environmental Performance Index and Climate Change Performance Index
 - Reviewed UN technical reports and provided statistical inputs for national climate assessments
 
-**PhD Research Fellow** — IIT Kharagpur *(July 2019–Present)*
+**PhD Research Fellow** — IIT Kharagpur *(July 2019 to Present)*
 - Statistical analysis of extreme climate events, GLOFs, and landslide susceptibility in the NW Himalayas
 - High-performance computing using IIT Kharagpur's Param Shakti facility (WRF model runs)
 
-**Junior Research Fellow** — G.B. Pant National Institute of Himalayan Environment, Almora *(December 2014–July 2015)*
+**Junior Research Fellow** — G.B. Pant National Institute of Himalayan Environment, Almora *(December 2014 to July 2015)*
 - Forest cover modelling using remote sensing and GIS for Manas Biosphere Reserve, Assam
 
 ---
@@ -58,10 +58,10 @@ warming climate to real risks faced by Himalayan communities.
 ## Academic Achievements
 
 - 🏆 **Prime Minister's Research Fellow** (December 2020)
-- 🏅 **Best Oral Presentation Award** — Research Scholar Day, CORAL, IIT Kharagpur (January 2024)
-- 🥇 **Gold Medal** — M.Sc. Applied Geology, University of Mysore (2019)
+- 🏅 **Best Oral Presentation Award**: Research Scholar Day, CORAL, IIT Kharagpur (January 2024)
+- 🥇 **Gold Medal**: M.Sc. Applied Geology, University of Mysore (2019)
 - ✅ **GATE 2019**: AIR 430, Score 487
-- ✅ **KSET 2018** — Karnataka State Eligibility Test for Lectureship
+- ✅ **KSET 2018**: Karnataka State Eligibility Test for Lectureship
 
 ---
 
