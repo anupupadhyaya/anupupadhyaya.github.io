@@ -1,29 +1,24 @@
-
 treks:
-
-- file: photography/treks/lake_kuari_pass.jpeg
+  - file: photography/treks/lake_kuari_pass.jpeg
     location: "Tali lake, Auli, Uttarakhand"
     caption: "Tali lake enroute Kuari Pass at 3550m"
     year: 2019
 
-   
-- file: photography/treks/trek_kuari_pass_3.jpeg
+  - file: photography/treks/trek_kuari_pass_3.jpeg
     location: "Kuari Pass, Uttarakhand"
     caption: "First light over the tents at 3670m"
     year: 2019
-         
-- file: photography/treks/trek_kuari_pass.jpeg
+
+  - file: photography/treks/trek_kuari_pass.jpeg
     location: "Nearing Kuari Pass"
     caption: "Joy before summit"
     year: 2019
-    
 
-- file: photography/treks/pindar_trek_river_bridge.jpeg
-    location: "Enroute Pindari Glacier , Uttarakhand"
+  - file: photography/treks/pindar_trek_river_bridge.jpeg
+    location: "Enroute Pindari Glacier, Uttarakhand"
     caption: "A wooden bridge"
     year: 2021
 
-    
 travels:
   - file: photography/travels/dubai.jpeg
     location: "Dubai, UAE"
@@ -45,11 +40,11 @@ travels:
     caption: "Old Town at golden hour"
     year: 2024
 
-   - file: photography/travels/liberty_.jpeg
+  - file: photography/travels/liberty_.jpeg
     location: "New York, USA"
     caption: "Liberty behind us"
     year: 2024
-  
+
   - file: photography/travels/manhattan.jpeg
     location: "New York, USA"
     caption: "Manhattan skyline"
@@ -72,12 +67,11 @@ wildlife:
     year: 2018
 
 nature:
-
   - file: photography/travels/goa_sun_set.JPG
     location: "Goa"
-    caption: "the majestic sunset"
+    caption: "The majestic sunset"
     year: 2014
-    
+
   - file: photography/nature/ladakh.jpeg
     location: "Manali-Leh Highway"
     caption: "Enroute Leh"
@@ -88,7 +82,7 @@ nature:
     caption: "Chasing monsoon in Kerala"
     year: 2018
 
-  - file: images/photography/nature/kaziranga_sunset.jpeg
+  - file: photography/nature/kaziranga_sunset.jpeg
     location: "Kaziranga National Park"
-    caption: "moment!"
+    caption: "A moment!"
     year: 2020
