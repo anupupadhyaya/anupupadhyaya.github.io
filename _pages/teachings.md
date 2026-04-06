@@ -207,7 +207,7 @@ author_profile: true
 
 <div class="teach-card pmrf">
   <div class="teach-title">Hijli College, Kharagpur</div>
-  <div class="teach-meta">Paschim Medinipur, West Bengal &nbsp;|&nbsp; August – November 2022</div>
+  <div class="teach-meta">Paschim Medinipur, West Bengal &nbsp;|&nbsp; August to November 2022</div>
   <span class="teach-badge badge-pmrf">PMRF Outreach</span>
   <div class="teach-subjects">
     <table>
@@ -271,7 +271,7 @@ author_profile: true
 
 <div class="teach-card pmrf">
   <div class="teach-title">Kharagpur College, Kharagpur</div>
-  <div class="teach-meta">Paschim Medinipur, West Bengal &nbsp;|&nbsp; November 2023 – July 2024</div>
+  <div class="teach-meta">Paschim Medinipur, West Bengal &nbsp;|&nbsp; November 2023 to July 2024</div>
   <span class="teach-badge badge-pmrf">PMRF Outreach</span>
   <div class="teach-subjects">
     <table>
@@ -292,7 +292,7 @@ author_profile: true
   </ul>
 </div>
 
-<div class="teach-section-title">🏛️ Teaching Assistantship — IIT Kharagpur</div>
+<div class="teach-section-title">🏛️ Teaching Assistantship : IIT Kharagpur</div>
 
 <div class="teach-card iit">
   <div class="teach-title">DIY Lab Course (DY17003)</div>
