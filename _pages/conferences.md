@@ -119,7 +119,7 @@ author_profile: true
 
 A record of conference presentations, workshops, and invited talks.
 
-<div class="conf-section-title">🌍 Major International Conferences</div>
+<div class="conf-section-title">Major International Conferences</div>
 
 <div class="conf-card major">
   <div class="conf-title">
@@ -162,7 +162,7 @@ A record of conference presentations, workshops, and invited talks.
   </div>
 </div>
 
-<div class="conf-section-title">🇮🇳 National Conferences</div>
+<div class="conf-section-title">National Conferences</div>
 
 <div class="conf-card">
   <div class="conf-title">Record-breaking April to May 2024 Heatwave in West Bengal: Multi-parameter Assessment</div>
