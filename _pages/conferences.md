@@ -23,6 +23,12 @@ author_profile: true
   border-left: 4px solid #ccc;
   background: rgba(128,128,128,0.04);
   border-radius: 0 6px 6px 0;
+  transition: all 0.25s ease;
+}
+
+.conf-card:hover {
+  transform: translateX(3px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
 
 .conf-card.major {
