@@ -309,25 +309,14 @@ to real risks faced by Himalayan communities.
     <div class="achieve-year">December 2020</div>
   </div>
 
-  <div class="achieve-item">
-    <div class="achieve-text"><strong>Best Oral Presentation Award</strong> &mdash; Research Scholar Day, CORAL, IIT Kharagpur</div>
-    <div class="achieve-year">January 2024</div>
-  </div>
+<div class="achieve-text"><strong>Best Oral Presentation Award</strong> &nbsp;|&nbsp; Research Scholar Day, CORAL, IIT Kharagpur</div>
 
-  <div class="achieve-item">
-    <div class="achieve-text"><strong>Gold Medal</strong> &mdash; M.Sc. Applied Geology, University of Mysore</div>
-    <div class="achieve-year">2019</div>
-  </div>
+<div class="achieve-text"><strong>Gold Medal</strong> &nbsp;|&nbsp; M.Sc. Applied Geology, University of Mysore</div>
 
-  <div class="achieve-item">
-    <div class="achieve-text"><strong>GATE 2019</strong> &mdash; AIR 430, Score 487</div>
-    <div class="achieve-year">2019</div>
-  </div>
+<div class="achieve-text"><strong>GATE 2019</strong> &nbsp;|&nbsp; AIR 430, Score 487</div>
 
-  <div class="achieve-item">
-    <div class="achieve-text"><strong>KSET 2018</strong> &mdash; Karnataka State Eligibility Test for Lectureship</div>
-    <div class="achieve-year">2018</div>
-  </div>
+<div class="achieve-text"><strong>KSET 2018</strong> &nbsp;|&nbsp; Karnataka State Eligibility Test for Lectureship</div>
+  
 </div>
 
 <div class="about-section-title">Skills</div>
