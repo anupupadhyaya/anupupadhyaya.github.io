@@ -478,7 +478,7 @@ author_profile: false
      ================== -->
 <div id="treks"></div>
 <div class="section-title">🏔️ &nbsp; Treks</div>
-<p class="section-desc">High passes, glacial moraines and silences that only mountains know</p>
+<p class="section-desc">High passes and silences </p>
 
 <div class="masonry-grid">
 {% assign i = 0 %}
@@ -520,7 +520,7 @@ author_profile: false
      ================== -->
 <div id="wildlife"></div>
 <div class="section-title">🦅 &nbsp; Wildlife</div>
-<p class="section-desc">Creatures that share this planet, caught in an unguarded moment</p>
+<p class="section-desc">Creatures that share this planet</p>
 
 <div class="masonry-grid">
 {% assign i = 0 %}
@@ -541,7 +541,7 @@ author_profile: false
      ================== -->
 <div id="nature"></div>
 <div class="section-title">🌿 &nbsp; Nature</div>
-<p class="section-desc">Flowers, skies, seasons and the quiet drama of the natural world</p>
+<p class="section-desc">Skies, seasons and the quiet drama </p>
 
 <div class="masonry-grid">
 {% assign i = 0 %}
