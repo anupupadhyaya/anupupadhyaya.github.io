@@ -14,6 +14,8 @@ redirect_from:
   line-height: 1.8;
   color: var(--global-text-color);
   margin-bottom: 1.5em;
+  padding-left: 28px;
+  text-align: justify;
 }
 .intro-text a {
   color: #2a7ae2;
@@ -32,6 +34,7 @@ redirect_from:
   text-transform: uppercase;
   margin: 2.2em 0 1em;
   padding-bottom: 6px;
+  padding-left: 28px;
   border-bottom: 2px solid var(--global-border-color);
   color: var(--global-text-color);
 }
@@ -46,6 +49,7 @@ redirect_from:
   line-height: 1.75;
   font-size: 0.93em;
   color: var(--global-text-color);
+  text-align: justify;
 }
 
 /* ── Education Cards ── */
@@ -122,6 +126,7 @@ redirect_from:
   padding: 3px 0 3px 18px;
   position: relative;
   line-height: 1.55;
+  text-align: justify;
 }
 .work-points li::before {
   content: "▸";
@@ -132,6 +137,9 @@ redirect_from:
 }
 
 /* ── Achievements ── */
+.achieve-wrapper {
+  padding-left: 28px;
+}
 .achieve-item {
   display: flex;
   align-items: flex-start;
@@ -196,6 +204,11 @@ redirect_from:
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
+  .intro-text,
+  .about-section-title,
+  .achieve-wrapper {
+    padding-left: 0;
+  }
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -290,29 +303,31 @@ to real risks faced by Himalayan communities.
 
 <div class="about-section-title">Academic Achievements</div>
 
-<div class="achieve-item">
-  <div class="achieve-text"><strong>Prime Minister's Research Fellow</strong></div>
-  <div class="achieve-year">December 2020</div>
-</div>
+<div class="achieve-wrapper">
+  <div class="achieve-item">
+    <div class="achieve-text"><strong>Prime Minister's Research Fellow</strong></div>
+    <div class="achieve-year">December 2020</div>
+  </div>
 
-<div class="achieve-item">
-  <div class="achieve-text"><strong>Best Oral Presentation Award</strong> &mdash; Research Scholar Day, CORAL, IIT Kharagpur</div>
-  <div class="achieve-year">January 2024</div>
-</div>
+  <div class="achieve-item">
+    <div class="achieve-text"><strong>Best Oral Presentation Award</strong> &mdash; Research Scholar Day, CORAL, IIT Kharagpur</div>
+    <div class="achieve-year">January 2024</div>
+  </div>
 
-<div class="achieve-item">
-  <div class="achieve-text"><strong>Gold Medal</strong> &mdash; M.Sc. Applied Geology, University of Mysore</div>
-  <div class="achieve-year">2019</div>
-</div>
+  <div class="achieve-item">
+    <div class="achieve-text"><strong>Gold Medal</strong> &mdash; M.Sc. Applied Geology, University of Mysore</div>
+    <div class="achieve-year">2019</div>
+  </div>
 
-<div class="achieve-item">
-  <div class="achieve-text"><strong>GATE 2019</strong> &mdash; AIR 430, Score 487</div>
-  <div class="achieve-year">2019</div>
-</div>
+  <div class="achieve-item">
+    <div class="achieve-text"><strong>GATE 2019</strong> &mdash; AIR 430, Score 487</div>
+    <div class="achieve-year">2019</div>
+  </div>
 
-<div class="achieve-item">
-  <div class="achieve-text"><strong>KSET 2018</strong> &mdash; Karnataka State Eligibility Test for Lectureship</div>
-  <div class="achieve-year">2018</div>
+  <div class="achieve-item">
+    <div class="achieve-text"><strong>KSET 2018</strong> &mdash; Karnataka State Eligibility Test for Lectureship</div>
+    <div class="achieve-year">2018</div>
+  </div>
 </div>
 
 <div class="about-section-title">Skills</div>
