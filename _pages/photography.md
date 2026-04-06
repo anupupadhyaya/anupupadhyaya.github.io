@@ -121,13 +121,7 @@ author_profile: false
 
 .section-title::before,
 .section-title::after {
-  content: '';
-  display: inline-block;
-  width: 50px;
-  height: 1px;
-  background: var(--global-border-color);
-  vertical-align: middle;
-  margin: 0 14px;
+  display: none;
 }
 
 .section-desc {
