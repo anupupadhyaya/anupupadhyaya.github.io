@@ -27,7 +27,7 @@ author_profile: false
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.48);
+  background: rgba(0,0,0,0.48);
 }
 .photo-hero::after {
   content: '';
@@ -57,14 +57,13 @@ author_profile: false
   font-weight: 300;
   letter-spacing: 5px;
   font-style: italic;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
   color: rgba(255,255,255,0.85);
 }
 .section-tabs {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin: 2.5em 0 2.5em;
+  margin: 2.5em 0;
   flex-wrap: wrap;
 }
 .section-tab {
@@ -79,13 +78,8 @@ author_profile: false
   cursor: pointer;
   text-decoration: none;
   transition: all 0.25s ease;
-  font-family: 'Source Sans 3', sans-serif;
 }
-.section-tab:hover {
-  opacity: 1;
-  border-color: currentColor;
-  text-decoration: none;
-}
+.section-tab:hover { opacity: 1; border-color: currentColor; text-decoration: none; }
 .section-title {
   text-align: center;
   font-family: 'Lora', 'Georgia', serif;
@@ -95,11 +89,9 @@ author_profile: false
   text-transform: uppercase;
   color: var(--global-text-color);
   opacity: 0.5;
-  margin: 3.5em 0 0.4em 0;
-  position: relative;
+  margin: 3.5em 0 0.4em;
 }
-.section-title::before,
-.section-title::after {
+.section-title::before, .section-title::after {
   content: '';
   display: inline-block;
   width: 50px;
@@ -115,22 +107,21 @@ author_profile: false
   opacity: 0.45;
   font-style: italic;
   margin-bottom: 1.8em;
-  letter-spacing: 0.5px;
 }
 .masonry-grid {
   columns: 3;
   column-gap: 10px;
   margin-bottom: 1em;
 }
-@media screen and (max-width: 900px) { .masonry-grid { columns: 2; } }
-@media screen and (max-width: 500px) { .masonry-grid { columns: 1; } }
+@media (max-width: 900px) { .masonry-grid { columns: 2; } }
+@media (max-width: 500px) { .masonry-grid { columns: 1; } }
 .masonry-item {
   break-inside: avoid;
   margin-bottom: 10px;
   position: relative;
   overflow: hidden;
   border-radius: 3px;
-  cursor: pointer;
+  cursor: zoom-in;
   background: var(--global-border-color);
 }
 .masonry-item img {
@@ -156,7 +147,6 @@ author_profile: false
   margin: 0;
   font-size: 0.8em;
   font-style: italic;
-  letter-spacing: 0.3px;
   color: rgba(255,255,255,0.9) !important;
   line-height: 1.4;
 }
@@ -168,58 +158,49 @@ author_profile: false
   opacity: 0.75;
   color: #ddd;
   margin-bottom: 5px;
-  font-family: 'Source Sans 3', sans-serif;
 }
 
-/* Lightbox */
-#photo-lightbox {
-  display: none;
+/* ── LIGHTBOX ── */
+#plb {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.97);
-  z-index: 999999;
+  z-index: 2147483647;          /* absolute maximum */
+  display: none;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-#photo-lightbox.active { display: flex; }
-#photo-lightbox img {
-  max-width: 85vw;
-  max-height: 68vh;
+#plb.on { display: flex; }
+
+/* push masthead behind lightbox when open */
+body.plb-open .masthead { z-index: 1 !important; }
+body.plb-open { overflow: hidden; }
+
+#plb-img {
+  max-width: 88vw;
+  max-height: 74vh;
   object-fit: contain;
   border-radius: 2px;
-  box-shadow: 0 0 100px rgba(0,0,0,0.9);
-  margin-top: 25px;
+  box-shadow: 0 0 80px rgba(0,0,0,0.9);
+  display: block;
+  margin-top: 30px;
 }
-.lb-topbar {
+.plb-top {
   position: absolute;
   top: 0; left: 0; right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 28px;
+  padding: 16px 24px;
   z-index: 10;
 }
-.lb-back {
-  color: rgba(255,255,255,0.5);
-  font-size: 0.75em;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-family: 'Source Sans 3', sans-serif;
-  transition: color 0.2s;
-}
-.lb-back:hover { color: white; }
-.lb-counter {
+.plb-cnt {
   color: rgba(255,255,255,0.3);
   font-size: 0.72em;
   letter-spacing: 3px;
-  font-family: 'Source Sans 3', sans-serif;
 }
-.lb-x {
+.plb-close {
   color: rgba(255,255,255,0.5);
   font-size: 1.8em;
   cursor: pointer;
@@ -227,49 +208,46 @@ author_profile: false
   border: none;
   line-height: 1;
   transition: color 0.2s;
+  padding: 0;
 }
-.lb-x:hover { color: white; }
-.lb-section {
-  display: block;
-  font-size: 0.6em;
+.plb-close:hover { color: #fff; }
+.plb-sec {
+  font-size: 0.62em;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.25);
-  margin-bottom: 10px;
-  font-family: 'Source Sans 3', sans-serif;
+  color: rgba(255,255,255,0.2);
+  margin-bottom: 8px;
+  margin-top: 4px;
 }
-.lb-meta {
+.plb-meta {
   text-align: center;
-  margin-top: 1.2em;
+  margin-top: 1.1em;
   padding: 0 1em;
 }
-.lb-loc {
+.plb-loc {
   display: block;
   font-size: 0.68em;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
-  margin-bottom: 6px;
-  font-family: 'Source Sans 3', sans-serif;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 5px;
 }
-.lb-cap {
+.plb-cap {
   color: rgba(255,255,255,0.8);
   font-style: italic;
   font-size: 0.92em;
   font-family: 'Lora', Georgia, serif;
-  letter-spacing: 0.3px;
-  max-width: 560px;
+  max-width: 540px;
   margin: 0 auto;
 }
-.lb-yr {
+.plb-yr {
   display: block;
-  font-size: 0.68em;
-  color: rgba(255,255,255,0.25);
-  margin-top: 8px;
+  font-size: 0.65em;
+  color: rgba(255,255,255,0.2);
+  margin-top: 7px;
   letter-spacing: 3px;
-  font-family: 'Source Sans 3', sans-serif;
 }
-.lb-arrow {
+.plb-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -281,26 +259,14 @@ author_profile: false
   padding: 0.2em 0.5em;
   font-weight: 100;
   transition: color 0.2s;
-  font-family: 'Lora', Georgia, serif;
   z-index: 10;
+  line-height: 1;
+  user-select: none;
 }
-.lb-arrow:hover { color: rgba(255,255,255,0.9); }
-.lb-left { left: 10px; }
-.lb-right { right: 10px; }
-body.lb-open .masthead,
-body.lb-open .greedy-nav,
-body.lb-open header { z-index: 1 !important; }
+.plb-arrow:hover { color: rgba(255,255,255,0.9); }
+#plb-prev { left: 8px; }
+#plb-next { right: 8px; }
 
-.coming-soon {
-  text-align: center;
-  padding: 3em 1em;
-  font-size: 0.82em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--global-text-color);
-  opacity: 0.3;
-  font-family: 'Source Sans 3', sans-serif;
-}
 .insta-link { text-align: center; margin: 2.5em 0 5em; }
 .insta-btn {
   display: inline-block;
@@ -312,18 +278,15 @@ body.lb-open header { z-index: 1 !important; }
   font-size: 0.78em;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-family: 'Source Sans 3', sans-serif;
   font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 15px rgba(220,39,67,0.28);
 }
-.insta-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(220,39,67,0.45);
-}
+.insta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(220,39,67,0.45); }
 .page__content { max-width: 100%; }
 </style>
 
+<!-- HERO -->
 <div class="photo-hero">
   <div class="photo-hero-text">
     <h1>Through My Lens</h1>
@@ -331,38 +294,38 @@ body.lb-open header { z-index: 1 !important; }
   </div>
 </div>
 
+<!-- TABS -->
 <div class="section-tabs">
-  <a href="#treks" class="section-tab">🏔️ &nbsp; Treks</a>
+  <a href="#treks"   class="section-tab">🏔️ &nbsp; Treks</a>
   <a href="#travels" class="section-tab">🌍 &nbsp; Travels</a>
   <a href="#wildlife" class="section-tab">🦅 &nbsp; Wildlife</a>
-  <a href="#nature" class="section-tab">🌿 &nbsp; Nature</a>
+  <a href="#nature"  class="section-tab">🌿 &nbsp; Nature</a>
 </div>
 
-<!-- Lightbox (completely separate IDs to avoid conflicts) -->
-<div id="photo-lightbox">
-  <div class="lb-topbar">
-    <button class="lb-back" id="lb-back">&#8592; Back to Gallery</button>
-    <div class="lb-counter" id="lb-counter"></div>
-    <button class="lb-x" id="lb-x">&#10005;</button>
+<!-- LIGHTBOX -->
+<div id="plb">
+  <div class="plb-top">
+    <span class="plb-cnt" id="plb-cnt"></span>
+    <button class="plb-close" id="plb-close">&#10005;</button>
   </div>
-  <button class="lb-arrow lb-left" id="lb-left">&#8249;</button>
-  <span class="lb-section" id="lb-section"></span>
-  <img id="lb-img" src="" alt="">
-  <div class="lb-meta">
-    <span class="lb-loc" id="lb-loc"></span>
-    <div class="lb-cap" id="lb-cap"></div>
-    <span class="lb-yr" id="lb-yr"></span>
+  <button class="plb-arrow" id="plb-prev">&#8249;</button>
+  <span class="plb-sec" id="plb-sec"></span>
+  <img id="plb-img" src="" alt="">
+  <div class="plb-meta">
+    <span class="plb-loc" id="plb-loc"></span>
+    <div class="plb-cap" id="plb-cap"></div>
+    <span class="plb-yr" id="plb-yr"></span>
   </div>
-  <button class="lb-arrow lb-right" id="lb-right">&#8250;</button>
+  <button class="plb-arrow" id="plb-next">&#8250;</button>
 </div>
 
-<!-- Treks -->
+<!-- TREKS -->
 <div id="treks"></div>
 <div class="section-title">🏔️ &nbsp; Treks</div>
-<p class="section-desc">High passes and silences</p>
-<div class="masonry-grid">
+<p class="section-desc">High passes, glacial moraines and silences that only mountains know</p>
+<div class="masonry-grid" data-section="treks">
 {% for photo in site.data.photography.treks %}
-<div class="masonry-item" data-section="treks" data-index="{{ forloop.index0 }}" data-year="{{ photo.year }}">
+<div class="masonry-item" data-idx="{{ forloop.index0 }}">
   <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
   <div class="masonry-caption">
     <span>{{ photo.location }}</span>
@@ -372,13 +335,13 @@ body.lb-open header { z-index: 1 !important; }
 {% endfor %}
 </div>
 
-<!-- Travels -->
+<!-- TRAVELS -->
 <div id="travels"></div>
 <div class="section-title">🌍 &nbsp; Travels</div>
 <p class="section-desc">From Himalayan valleys to European cobblestones and American skylines</p>
-<div class="masonry-grid">
+<div class="masonry-grid" data-section="travels">
 {% for photo in site.data.photography.travels %}
-<div class="masonry-item" data-section="travels" data-index="{{ forloop.index0 }}" data-year="{{ photo.year }}">
+<div class="masonry-item" data-idx="{{ forloop.index0 }}">
   <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
   <div class="masonry-caption">
     <span>{{ photo.location }}</span>
@@ -388,13 +351,13 @@ body.lb-open header { z-index: 1 !important; }
 {% endfor %}
 </div>
 
-<!-- Wildlife -->
+<!-- WILDLIFE -->
 <div id="wildlife"></div>
 <div class="section-title">🦅 &nbsp; Wildlife</div>
-<p class="section-desc">Creatures that share this planet</p>
-<div class="masonry-grid">
+<p class="section-desc">Creatures that share this planet — caught in an unguarded moment</p>
+<div class="masonry-grid" data-section="wildlife">
 {% for photo in site.data.photography.wildlife %}
-<div class="masonry-item" data-section="wildlife" data-index="{{ forloop.index0 }}" data-year="{{ photo.year }}">
+<div class="masonry-item" data-idx="{{ forloop.index0 }}">
   <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
   <div class="masonry-caption">
     <span>{{ photo.location }}</span>
@@ -404,13 +367,13 @@ body.lb-open header { z-index: 1 !important; }
 {% endfor %}
 </div>
 
-<!-- Nature -->
+<!-- NATURE -->
 <div id="nature"></div>
 <div class="section-title">🌿 &nbsp; Nature</div>
-<p class="section-desc">Flowers, skies, seasons and the quiet drama</p>
-<div class="masonry-grid">
+<p class="section-desc">Flowers, skies, seasons and the quiet drama of the natural world</p>
+<div class="masonry-grid" data-section="nature">
 {% for photo in site.data.photography.nature %}
-<div class="masonry-item" data-section="nature" data-index="{{ forloop.index0 }}" data-year="{{ photo.year }}">
+<div class="masonry-item" data-idx="{{ forloop.index0 }}">
   <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
   <div class="masonry-caption">
     <span>{{ photo.location }}</span>
@@ -421,131 +384,91 @@ body.lb-open header { z-index: 1 !important; }
 </div>
 
 <div class="insta-link">
-  <a href="https://www.instagram.com/anup_upadhyaya?igsh=MW5vYjN1MW91ZnB5cA%3D%3D&utm_source=qr" target="_blank" class="insta-btn">
-    📷 &nbsp; Follow on Instagram
-  </a>
+  <a href="https://www.instagram.com/anup_upadhyaya?igsh=MW5vYjN1MW91ZnB5cA%3D%3D&utm_source=qr"
+     target="_blank" class="insta-btn">📷 &nbsp; Follow on Instagram</a>
 </div>
 
-<!-- ZERO Jekyll inside this script. Reads everything from the DOM. -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+(function(){
+  // Build photo arrays per section from DOM
+  var secs = {};
+  var labels = { treks:'Treks', travels:'Travels', wildlife:'Wildlife', nature:'Nature' };
 
-  // Build photo data from DOM only
-  var sections = {};
-  var items = document.querySelectorAll('.masonry-item');
-
-  for (var i = 0; i < items.length; i++) {
-    var el = items[i];
-    var sec = el.getAttribute('data-section');
-    if (!sec) continue;
-    if (!sections[sec]) sections[sec] = [];
-
-    var imgEl = el.querySelector('img');
-    var locEl = el.querySelector('.masonry-caption span');
-    var capEl = el.querySelector('.masonry-caption p');
-    var yr = el.getAttribute('data-year') || '';
-
-    sections[sec].push({
-      src: imgEl ? imgEl.getAttribute('src') : '',
-      location: locEl ? locEl.textContent : '',
-      caption: capEl ? capEl.textContent : '',
-      year: yr
-    });
-  }
-
-  var names = { treks: 'Treks', travels: 'Travels', wildlife: 'Wildlife', nature: 'Nature' };
-  var curSec = '';
-  var curIdx = 0;
-
-  var box = document.getElementById('photo-lightbox');
-  var boxImg = document.getElementById('lb-img');
-  var boxLoc = document.getElementById('lb-loc');
-  var boxCap = document.getElementById('lb-cap');
-  var boxYr = document.getElementById('lb-yr');
-  var boxSec = document.getElementById('lb-section');
-  var boxCnt = document.getElementById('lb-counter');
-
-  function show() {
-    var list = sections[curSec];
-    if (!list || !list[curIdx]) return;
-    var p = list[curIdx];
-    boxImg.src = p.src;
-    boxLoc.textContent = p.location;
-    boxCap.textContent = p.caption;
-    boxYr.textContent = p.year;
-    boxSec.textContent = names[curSec] || curSec;
-    boxCnt.textContent = (curIdx + 1) + ' / ' + list.length;
-  }
-
-  function open(sec, idx) {
-    curSec = sec;
-    curIdx = idx;
-    show();
-    box.classList.add('active');
-    document.body.classList.add('lb-open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function close() {
-    box.classList.remove('active');
-    document.body.classList.remove('lb-open');
-    document.body.style.overflow = '';
-  }
-
-  function move(dir) {
-    var list = sections[curSec];
-    if (!list) return;
-    curIdx = (curIdx + dir + list.length) % list.length;
-    show();
-  }
-
-  // Attach click to every masonry item
-  for (var j = 0; j < items.length; j++) {
-    (function(el) {
-      el.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var s = el.getAttribute('data-section');
-        var idx = parseInt(el.getAttribute('data-index'), 10);
-        if (s && !isNaN(idx)) {
-          open(s, idx);
-        }
+  document.querySelectorAll('.masonry-grid[data-section]').forEach(function(grid){
+    var sec = grid.getAttribute('data-section');
+    secs[sec] = [];
+    grid.querySelectorAll('.masonry-item').forEach(function(item){
+      var img = item.querySelector('img');
+      var loc = item.querySelector('.masonry-caption span');
+      var cap = item.querySelector('.masonry-caption p');
+      secs[sec].push({
+        src: img ? img.src : '',
+        loc: loc ? loc.textContent.trim() : '',
+        cap: cap ? cap.textContent.trim() : '',
+        yr:  item.getAttribute('data-yr') || ''
       });
-    })(items[j]);
+    });
+
+    // Attach click handlers
+    grid.querySelectorAll('.masonry-item').forEach(function(item){
+      item.addEventListener('click', function(e){
+        e.preventDefault();
+        open(sec, parseInt(item.getAttribute('data-idx'), 10));
+      });
+    });
+  });
+
+  var lb    = document.getElementById('plb');
+  var lbImg = document.getElementById('plb-img');
+  var lbLoc = document.getElementById('plb-loc');
+  var lbCap = document.getElementById('plb-cap');
+  var lbYr  = document.getElementById('plb-yr');
+  var lbSec = document.getElementById('plb-sec');
+  var lbCnt = document.getElementById('plb-cnt');
+
+  var curSec = '', curIdx = 0;
+
+  function render(){
+    var list = secs[curSec];
+    if(!list || !list[curIdx]) return;
+    var p = list[curIdx];
+    lbImg.src      = p.src;
+    lbLoc.textContent = p.loc;
+    lbCap.textContent = p.cap;
+    lbYr.textContent  = p.yr;
+    lbSec.textContent = labels[curSec] || curSec;
+    lbCnt.textContent = (curIdx+1) + ' / ' + list.length;
   }
 
-  // Close buttons
-  document.getElementById('lb-x').addEventListener('click', function(e) {
-    e.stopPropagation();
-    close();
-  });
-  document.getElementById('lb-back').addEventListener('click', function(e) {
-    e.stopPropagation();
-    close();
-  });
+  function open(sec, idx){
+    curSec = sec; curIdx = idx;
+    render();
+    lb.classList.add('on');
+    document.body.classList.add('plb-open');
+  }
 
-  // Arrow buttons
-  document.getElementById('lb-left').addEventListener('click', function(e) {
-    e.stopPropagation();
-    move(-1);
-  });
-  document.getElementById('lb-right').addEventListener('click', function(e) {
-    e.stopPropagation();
-    move(1);
-  });
+  function close(){
+    lb.classList.remove('on');
+    document.body.classList.remove('plb-open');
+    lbImg.src = '';
+  }
 
-  // Click dark area to close
-  box.addEventListener('click', function(e) {
-    if (e.target === box) close();
-  });
+  function move(dir){
+    var list = secs[curSec];
+    if(!list) return;
+    curIdx = (curIdx + dir + list.length) % list.length;
+    render();
+  }
 
-  // Keyboard
-  document.addEventListener('keydown', function(e) {
-    if (!box.classList.contains('active')) return;
-    if (e.key === 'Escape') close();
-    if (e.key === 'ArrowRight') move(1);
-    if (e.key === 'ArrowLeft') move(-1);
+  document.getElementById('plb-close').addEventListener('click', close);
+  document.getElementById('plb-prev').addEventListener('click', function(e){ e.stopPropagation(); move(-1); });
+  document.getElementById('plb-next').addEventListener('click', function(e){ e.stopPropagation(); move(1); });
+  lb.addEventListener('click', function(e){ if(e.target===lb) close(); });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('on')) return;
+    if(e.key==='Escape') close();
+    if(e.key==='ArrowRight') move(1);
+    if(e.key==='ArrowLeft')  move(-1);
   });
-
-});
+})();
 </script>
