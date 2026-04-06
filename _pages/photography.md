@@ -6,7 +6,7 @@ author_profile: false
 ---
 
 <style>
-/* Photography page — no sidebar, full-width artistic layout */
+/* Photography page, no sidebar, full-width artistic layout */
 
 /* ==================
    Hero Header
@@ -25,7 +25,6 @@ author_profile: false
   justify-content: center;
   margin-bottom: 0;
   position: relative;
-  /* Fallback gradient when no hero image yet */
   background-color: #1a2a1e;
   background-image: url('/images/photography/hero.jpg'),
     linear-gradient(135deg, #1a2a1e 0%, #2d4a35 50%, #1a3028 100%);
@@ -163,7 +162,7 @@ author_profile: false
   overflow: hidden;
   border-radius: 3px;
   cursor: pointer;
-  background: var(--global-border-color); /* placeholder while loading */
+  background: var(--global-border-color);
 }
 
 .masonry-item img {
@@ -354,7 +353,7 @@ author_profile: false
 }
 
 /* ==================
-   Full-width override — no sidebar on this page
+   Full-width override, no sidebar on this page
    ================== */
 .page__content {
   max-width: 100%;
@@ -448,7 +447,7 @@ author_profile: false
      ================== -->
 <div id="wildlife"></div>
 <div class="section-title">🦅 &nbsp; Wildlife</div>
-<p class="section-desc">Creatures that share this planet — caught in an unguarded moment</p>
+<p class="section-desc">Creatures that share this planet, caught in an unguarded moment</p>
 
 <div class="masonry-grid">
 {% assign t_size = site.data.photography.treks | size %}
@@ -493,7 +492,7 @@ author_profile: false
      ================== -->
 <div id="human"></div>
 <div class="section-title">🧍 &nbsp; Human Emotions</div>
-<p class="section-desc">Strangers in motion — streets, fields, laughter and the in-between moments</p>
+<p class="section-desc">Strangers in motion, streets, fields, laughter and the in-between moments</p>
 
 <div class="masonry-grid">
 {% assign t_size = site.data.photography.treks | size %}
