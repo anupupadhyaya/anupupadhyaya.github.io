@@ -309,14 +309,15 @@ to real risks faced by Himalayan communities.
     <div class="achieve-year">December 2020</div>
   </div>
 
-<div class="achieve-text"><strong>Best Oral Presentation Award</strong>, Research Scholar Day, CORAL, IIT Kharagpur</div>
+<!-- FIND THESE (5 lines with &mdash;) -->
 
-<div class="achieve-text"><strong>Gold Medal</strong>, M.Sc. Applied Geology, University of Mysore</div>
+<div class="achieve-text"><strong>Best Oral Presentation Award</strong> &mdash; Research Scholar Day, CORAL, IIT Kharagpur</div>
 
-<div class="achieve-text"><strong>GATE 2019</strong>, AIR 430, Score 487</div>
+<div class="achieve-text"><strong>Gold Medal</strong> &mdash; M.Sc. Applied Geology, University of Mysore</div>
 
-<div class="achieve-text"><strong>KSET 2018</strong>, Karnataka State Eligibility Test for Lectureship</div>
+<div class="achieve-text"><strong>GATE 2019</strong> &mdash; AIR 430, Score 487</div>
 
+<div class="achieve-text"><strong>KSET 2018</strong> &mdash; Karnataka State Eligibility Test for Lectureship</div>
 
 </div>
 
