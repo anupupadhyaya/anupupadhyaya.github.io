@@ -11,7 +11,10 @@ author_profile: true
   line-height: 1.7;
   color: var(--global-text-color);
   margin-bottom: 2em;
+  text-align: justify;
+  padding-left: 28px;
 }
+  
 .teach-intro strong {
   color: var(--global-text-color);
 }
