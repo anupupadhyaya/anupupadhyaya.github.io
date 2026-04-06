@@ -567,7 +567,7 @@ author_profile: false
      Lightbox Script
      ================== -->
 <script>
-/* Photo data built by Jekyll (escape filter handles special chars) */
+/* Photo data built by Jekyll */
 var PLB_DATA = {
   treks: [
     {% for p in site.data.photography.treks %}
@@ -611,7 +611,6 @@ var PLB_DATA = {
   ]
 };
 
-/* Section display names */
 var PLB_LABELS = {
   treks: 'Treks',
   travels: 'Travels',
@@ -619,13 +618,11 @@ var PLB_LABELS = {
   nature: 'Nature'
 };
 
-/* State */
 var plbSec = '';
 var plbIdx = 0;
 var plbEl = document.getElementById('plb');
 var plbImgEl = document.getElementById('plb-img');
 
-/* Render current photo in lightbox */
 function plbRender() {
   var p = PLB_DATA[plbSec][plbIdx];
   plbImgEl.src = p.src;
@@ -636,14 +633,12 @@ function plbRender() {
   document.getElementById('plb-cnt').textContent =
     (plbIdx + 1) + ' / ' + PLB_DATA[plbSec].length;
 
-  /* Preload next image for smoother navigation */
   var list = PLB_DATA[plbSec];
   var nextIdx = (plbIdx + 1) % list.length;
   var preload = new Image();
   preload.src = list[nextIdx].src;
 }
 
-/* Open lightbox with subtle zoom animation */
 function plbOpen(sec, idx) {
   plbSec = sec;
   plbIdx = idx;
@@ -651,29 +646,24 @@ function plbOpen(sec, idx) {
   plbEl.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 
-  /* Push navbar behind lightbox */
   var mh = document.querySelector('.masthead');
   if (mh) mh.style.zIndex = '1';
 
-  /* Subtle zoom-in animation */
   plbImgEl.style.transform = 'scale(0.95)';
   setTimeout(function() {
     plbImgEl.style.transform = 'scale(1)';
   }, 50);
 }
 
-/* Close lightbox */
 function plbClose() {
   plbEl.style.display = 'none';
   document.body.style.overflow = '';
   plbImgEl.src = '';
 
-  /* Restore navbar */
   var mh = document.querySelector('.masthead');
   if (mh) mh.style.zIndex = '';
 }
 
-/* Move within current section only */
 function plbMove(dir) {
   var n = PLB_DATA[plbSec].length;
   plbIdx = (plbIdx + dir + n) % n;
@@ -688,7 +678,7 @@ document.addEventListener('keydown', function(e) {
   if (e.key === 'ArrowLeft') plbMove(-1);
 });
 
-/* Touch/Swipe support for mobile */
+/* Touch/Swipe support */
 var plbTouchStartX = 0;
 
 plbEl.addEventListener('touchstart', function(e) {
@@ -698,13 +688,46 @@ plbEl.addEventListener('touchstart', function(e) {
 plbEl.addEventListener('touchend', function(e) {
   var endX = e.changedTouches[0].clientX;
   var diff = plbTouchStartX - endX;
-
   if (Math.abs(diff) > 50) {
-    if (diff > 0) {
-      plbMove(1);
-    } else {
-      plbMove(-1);
-    }
+    plbMove(diff > 0 ? 1 : -1);
   }
 });
+
+/* ── Smooth scroll for section tabs ── */
+document.querySelectorAll('.section-tab').forEach(function(tab) {
+  tab.addEventListener('click', function(e) {
+    e.preventDefault();
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+/* ── Active tab on scroll ── */
+var tabSections = ['treks', 'travels', 'wildlife', 'nature'];
+var tabEls = document.querySelectorAll('.section-tab');
+
+function updateActiveTabs() {
+  var scrollPos = window.scrollY + 200;
+  var activeId = '';
+
+  tabSections.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el && el.offsetTop <= scrollPos) {
+      activeId = id;
+    }
+  });
+
+  tabEls.forEach(function(tab) {
+    if (tab.getAttribute('href') === '#' + activeId) {
+      tab.classList.add('active');
+    } else {
+      tab.classList.remove('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', updateActiveTabs);
+updateActiveTabs();
 </script>
