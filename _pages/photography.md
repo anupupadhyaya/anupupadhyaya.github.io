@@ -488,30 +488,6 @@ author_profile: false
 </div>
 
 <!-- ==================
-     Human Emotions Section
-     ================== -->
-<div id="human"></div>
-<div class="section-title">🧍 &nbsp; Human Emotions</div>
-<p class="section-desc">Strangers in motion, streets, fields, laughter and the in-between moments</p>
-
-<div class="masonry-grid">
-{% assign t_size = site.data.photography.treks | size %}
-{% assign tr_size = site.data.photography.travels | size %}
-{% assign w_size = site.data.photography.wildlife | size %}
-{% assign n_size = site.data.photography.nature | size %}
-{% assign human_start = t_size | plus: tr_size | plus: w_size | plus: n_size %}
-{% for photo in site.data.photography.human %}
-  <div class="masonry-item" onclick="openLightbox({{ human_start | plus: forloop.index0 }})">
-    <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
-    <div class="masonry-caption">
-      <span>{{ photo.location }}</span>
-      <p>{{ photo.caption }}</p>
-    </div>
-  </div>
-{% endfor %}
-</div>
-
-<!-- ==================
      Instagram Button
      ================== -->
 <div class="insta-link">
