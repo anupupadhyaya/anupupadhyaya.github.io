@@ -203,7 +203,7 @@ author_profile: true
   </div>
 </div>
 
-<div class="teach-section-title">🎓 PMRF Outreach Teaching</div>
+<div class="teach-section-title"> PMRF Outreach Teaching</div>
 
 <div class="teach-card pmrf">
   <div class="teach-title">Hijli College, Kharagpur</div>
@@ -292,7 +292,7 @@ author_profile: true
   </ul>
 </div>
 
-<div class="teach-section-title">🏛️ Teaching Assistantship : IIT Kharagpur</div>
+<div class="teach-section-title"> Teaching Assistantship : IIT Kharagpur</div>
 
 <div class="teach-card iit">
   <div class="teach-title">DIY Lab Course (DY17003)</div>
