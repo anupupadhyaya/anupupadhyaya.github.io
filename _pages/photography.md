@@ -12,7 +12,7 @@ author_profile: false
 .photo-hero {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  height: 65vh;
+  height: 55vh;
   min-height: 380px;
   background-size: cover;
   background-position: center;
@@ -77,19 +77,20 @@ author_profile: false
 .section-tabs {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin: 2.5em 0;
+  gap: 12px;
+  margin: 1em 0 2em;
   flex-wrap: wrap;
 }
 
 .section-tab {
-  padding: 7px 20px;
-  font-size: 0.72em;
+  padding: 10px 24px;
+  font-size: 0.85em;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--global-text-color);
-  opacity: 0.6;
-  border: 1px solid var(--global-border-color);
+  opacity: 0.75;
+  background: rgba(128, 128, 128, 0.12);
+  border: none;
   border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
@@ -99,7 +100,7 @@ author_profile: false
 
 .section-tab:hover {
   opacity: 1;
-  border-color: currentColor;
+  background: rgba(128, 128, 128, 0.25);
   text-decoration: none;
 }
 
@@ -452,8 +453,8 @@ author_profile: false
 <div class="photo-hero">
   <div class="photo-hero-text">
     <h1>Through My Lens</h1>
-    <p>Treks &nbsp;·&nbsp; Travels &nbsp;·&nbsp;
-       Wildlife &nbsp;·&nbsp; Nature</p>
+    <!-- <p>Treks &nbsp;·&nbsp; Travels &nbsp;·&nbsp;
+       Wildlife &nbsp;·&nbsp; Nature</p> -->
   </div>
 </div>
 
@@ -461,10 +462,10 @@ author_profile: false
      Section Jump Tabs
      ================== -->
 <div class="section-tabs">
-  <a href="#treks" class="section-tab">🏔️ &nbsp; Treks</a>
-  <a href="#travels" class="section-tab">🌍 &nbsp; Travels</a>
-  <a href="#wildlife" class="section-tab">🦅 &nbsp; Wildlife</a>
-  <a href="#nature" class="section-tab">🌿 &nbsp; Nature</a>
+  <a href="#treks" class="section-tab">🏔️ Treks</a>
+  <a href="#travels" class="section-tab">🌍 Travels</a>
+  <a href="#wildlife" class="section-tab">🦅 Wildlife</a>
+  <a href="#nature" class="section-tab">🌿 Nature</a>
 </div>
 
 <!-- ==================
