@@ -183,8 +183,8 @@ author_profile: true
 
 <div class="teach-intro">
   As part of my <strong>Prime Minister's Research Fellowship (PMRF)</strong> deliverables, 
-  I taught courses at nearby government colleges, contributing to undergraduate education 
-  in geography, remote sensing, and disaster management.
+  I had the opportunity to teach courses in geography, remote sensing, and disaster management 
+  at nearby government colleges.
 </div>
 
 <div class="teach-highlight">
