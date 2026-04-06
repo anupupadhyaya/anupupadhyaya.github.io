@@ -380,7 +380,7 @@ author_profile: false
   <a href="#travels" class="section-tab">🌍 &nbsp; Travels</a>
   <a href="#wildlife" class="section-tab">🦅 &nbsp; Wildlife</a>
   <a href="#nature" class="section-tab">🌿 &nbsp; Nature</a>
-  <a href="#human" class="section-tab">🧍 &nbsp; Human Emotions</a>
+  <!-- <a href="#human" class="section-tab">🧍 &nbsp; Human Emotions</a> -->
 </div>
 
 <!-- ==================
@@ -404,7 +404,7 @@ author_profile: false
      ================== -->
 <div id="treks"></div>
 <div class="section-title">🏔️ &nbsp; Treks</div>
-<p class="section-desc">High passes, glacial moraines and silences that only mountains know</p>
+<p class="section-desc">High passes and silences </p>
 
 <div class="masonry-grid">
 {% assign trek_start = 0 %}
@@ -447,7 +447,7 @@ author_profile: false
      ================== -->
 <div id="wildlife"></div>
 <div class="section-title">🦅 &nbsp; Wildlife</div>
-<p class="section-desc">Creatures that share this planet, caught in an unguarded moment</p>
+<p class="section-desc">Creatures that share this planet</p>
 
 <div class="masonry-grid">
 {% assign t_size = site.data.photography.treks | size %}
@@ -469,7 +469,7 @@ author_profile: false
      ================== -->
 <div id="nature"></div>
 <div class="section-title">🌿 &nbsp; Nature</div>
-<p class="section-desc">Flowers, skies, seasons and the quiet drama of the natural world</p>
+<p class="section-desc">Flowers, skies, seasons and the quiet drama </p>
 
 <div class="masonry-grid">
 {% assign t_size = site.data.photography.treks | size %}
