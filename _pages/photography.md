@@ -186,6 +186,7 @@ author_profile: false
   opacity: 0;
   transition: opacity 0.35s ease;
   border-radius: 0 0 3px 3px;
+  pointer-events: none;
 }
 
 .masonry-item:hover .masonry-caption { opacity: 1; }
@@ -211,7 +212,7 @@ author_profile: false
 }
 
 /* ==================
-   Lightbox (UPDATED)
+   Lightbox
    ================== */
 .lightbox-overlay {
   display: none;
@@ -273,7 +274,6 @@ author_profile: false
   font-family: 'Source Sans 3', sans-serif;
 }
 
-/* Top bar: back button, counter, close button */
 .lightbox-topbar {
   position: absolute;
   top: 0;
@@ -319,7 +319,6 @@ author_profile: false
 }
 .lightbox-close:hover { color: white; }
 
-/* Section label in lightbox */
 .lightbox-section {
   display: block;
   font-size: 0.6em;
@@ -349,7 +348,6 @@ author_profile: false
 .lightbox-prev { left: 10px; }
 .lightbox-next { right: 10px; }
 
-/* Hide site navbar when lightbox is open */
 body.lightbox-open .masthead,
 body.lightbox-open .greedy-nav,
 body.lightbox-open header {
@@ -399,9 +397,6 @@ body.lightbox-open header {
   box-shadow: 0 8px 28px rgba(220,39,67,0.45);
 }
 
-/* ==================
-   Full-width override, no sidebar on this page
-   ================== */
 .page__content {
   max-width: 100%;
 }
@@ -430,15 +425,15 @@ body.lightbox-open header {
 </div>
 
 <!-- ==================
-     Lightbox (UPDATED)
+     Lightbox
      ================== -->
 <div class="lightbox-overlay" id="lightbox">
   <div class="lightbox-topbar">
-    <button class="lightbox-back" onclick="closeLightbox()">← Back to Gallery</button>
+    <button class="lightbox-back" id="lightbox-back">&#8592; Back to Gallery</button>
     <div class="lightbox-counter" id="lightbox-counter"></div>
-    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox-close" id="lightbox-close">✕</button>
   </div>
-  <button class="lightbox-nav lightbox-prev" onclick="changePhoto(-1)">&#8249;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#8249;</button>
   <span class="lightbox-section" id="lightbox-section"></span>
   <img id="lightbox-img" src="" alt="">
   <div class="lightbox-meta">
@@ -446,11 +441,11 @@ body.lightbox-open header {
     <div class="lightbox-caption" id="lightbox-caption"></div>
     <span class="lightbox-year" id="lightbox-year"></span>
   </div>
-  <button class="lightbox-nav lightbox-next" onclick="changePhoto(1)">&#8250;</button>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next">&#8250;</button>
 </div>
 
 <!-- ==================
-     Treks Section (UPDATED onclick)
+     Treks Section
      ================== -->
 <div id="treks"></div>
 <div class="section-title">🏔️ &nbsp; Treks</div>
@@ -458,7 +453,7 @@ body.lightbox-open header {
 
 <div class="masonry-grid">
 {% for photo in site.data.photography.treks %}
-  <div class="masonry-item" onclick="openLightbox('treks', {{ forloop.index0 }})">
+  <div class="masonry-item" data-section="treks" data-index="{{ forloop.index0 }}">
     <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
     <div class="masonry-caption">
       <span>{{ photo.location }}</span>
@@ -472,7 +467,7 @@ body.lightbox-open header {
 </div>
 
 <!-- ==================
-     Travels Section (UPDATED onclick)
+     Travels Section
      ================== -->
 <div id="travels"></div>
 <div class="section-title">🌍 &nbsp; Travels</div>
@@ -480,7 +475,7 @@ body.lightbox-open header {
 
 <div class="masonry-grid">
 {% for photo in site.data.photography.travels %}
-  <div class="masonry-item" onclick="openLightbox('travels', {{ forloop.index0 }})">
+  <div class="masonry-item" data-section="travels" data-index="{{ forloop.index0 }}">
     <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
     <div class="masonry-caption">
       <span>{{ photo.location }}</span>
@@ -491,7 +486,7 @@ body.lightbox-open header {
 </div>
 
 <!-- ==================
-     Wildlife Section (UPDATED onclick)
+     Wildlife Section
      ================== -->
 <div id="wildlife"></div>
 <div class="section-title">🦅 &nbsp; Wildlife</div>
@@ -499,7 +494,7 @@ body.lightbox-open header {
 
 <div class="masonry-grid">
 {% for photo in site.data.photography.wildlife %}
-  <div class="masonry-item" onclick="openLightbox('wildlife', {{ forloop.index0 }})">
+  <div class="masonry-item" data-section="wildlife" data-index="{{ forloop.index0 }}">
     <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
     <div class="masonry-caption">
       <span>{{ photo.location }}</span>
@@ -510,7 +505,7 @@ body.lightbox-open header {
 </div>
 
 <!-- ==================
-     Nature Section (UPDATED onclick)
+     Nature Section
      ================== -->
 <div id="nature"></div>
 <div class="section-title">🌿 &nbsp; Nature</div>
@@ -518,7 +513,7 @@ body.lightbox-open header {
 
 <div class="masonry-grid">
 {% for photo in site.data.photography.nature %}
-  <div class="masonry-item" onclick="openLightbox('nature', {{ forloop.index0 }})">
+  <div class="masonry-item" data-section="nature" data-index="{{ forloop.index0 }}">
     <img src="/images/{{ photo.file }}" alt="{{ photo.location }}" loading="lazy">
     <div class="masonry-caption">
       <span>{{ photo.location }}</span>
@@ -540,107 +535,142 @@ body.lightbox-open header {
 </div>
 
 <!-- ==================
-     Lightbox Script (COMPLETELY REWRITTEN)
+     Lightbox Script
      ================== -->
 <script>
-// Section-based photo arrays (navigation stays within each section)
-const sectionPhotos = {
-  treks: [
+(function() {
+
+  var sectionPhotos = {};
+  var sectionNames = {
+    treks: "Treks",
+    travels: "Travels",
+    wildlife: "Wildlife",
+    nature: "Nature"
+  };
+
+  // Build photo arrays from the masonry items in the DOM
+  // This avoids any Jekyll/YAML escaping issues
+  document.querySelectorAll('.masonry-item').forEach(function(item) {
+    var section = item.getAttribute('data-section');
+    if (!section) return;
+    if (!sectionPhotos[section]) sectionPhotos[section] = [];
+    var img = item.querySelector('img');
+    var loc = item.querySelector('.masonry-caption span');
+    var cap = item.querySelector('.masonry-caption p');
+    sectionPhotos[section].push({
+      src: img ? img.getAttribute('src') : '',
+      location: loc ? loc.textContent : '',
+      caption: cap ? cap.textContent : '',
+      year: ''
+    });
+  });
+
+  // Also grab year from YAML-generated JSON (optional enhancement)
+  var yamlYears = {
     {% for photo in site.data.photography.treks %}
-    {
-      src: "/images/{{ photo.file }}",
-      caption: "{{ photo.caption }}",
-      location: "{{ photo.location }}",
-      year: "{{ photo.year }}"
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ],
-  travels: [
+    "treks-{{ forloop.index0 }}": "{{ photo.year }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %},
     {% for photo in site.data.photography.travels %}
-    {
-      src: "/images/{{ photo.file }}",
-      caption: "{{ photo.caption }}",
-      location: "{{ photo.location }}",
-      year: "{{ photo.year }}"
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ],
-  wildlife: [
+    "travels-{{ forloop.index0 }}": "{{ photo.year }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %},
     {% for photo in site.data.photography.wildlife %}
-    {
-      src: "/images/{{ photo.file }}",
-      caption: "{{ photo.caption }}",
-      location: "{{ photo.location }}",
-      year: "{{ photo.year }}"
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ],
-  nature: [
+    "wildlife-{{ forloop.index0 }}": "{{ photo.year }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %},
     {% for photo in site.data.photography.nature %}
-    {
-      src: "/images/{{ photo.file }}",
-      caption: "{{ photo.caption }}",
-      location: "{{ photo.location }}",
-      year: "{{ photo.year }}"
-    }{% unless forloop.last %},{% endunless %}
+    "nature-{{ forloop.index0 }}": "{{ photo.year }}"{% unless forloop.last %},{% endunless %}
     {% endfor %}
-  ]
-};
+  };
 
-// Section display names
-const sectionNames = {
-  treks: "Treks",
-  travels: "Travels",
-  wildlife: "Wildlife",
-  nature: "Nature"
-};
+  // Assign years
+  Object.keys(sectionPhotos).forEach(function(sec) {
+    sectionPhotos[sec].forEach(function(photo, i) {
+      var key = sec + "-" + i;
+      if (yamlYears[key]) photo.year = yamlYears[key];
+    });
+  });
 
-let currentSection = '';
-let currentIndex = 0;
+  var currentSection = '';
+  var currentIndex = 0;
 
-function openLightbox(section, index) {
-  currentSection = section;
-  currentIndex = index;
-  updateLightbox();
-  document.getElementById('lightbox').classList.add('active');
-  document.body.classList.add('lightbox-open');
-  document.body.style.overflow = 'hidden';
-}
+  var lightbox = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  var lbCaption = document.getElementById('lightbox-caption');
+  var lbLocation = document.getElementById('lightbox-location');
+  var lbYear = document.getElementById('lightbox-year');
+  var lbSection = document.getElementById('lightbox-section');
+  var lbCounter = document.getElementById('lightbox-counter');
 
-function updateLightbox() {
-  const photos = sectionPhotos[currentSection];
-  const photo = photos[currentIndex];
-  document.getElementById('lightbox-img').src = photo.src;
-  document.getElementById('lightbox-caption').textContent = photo.caption;
-  document.getElementById('lightbox-location').textContent = photo.location;
-  document.getElementById('lightbox-year').textContent = photo.year;
-  document.getElementById('lightbox-section').textContent = sectionNames[currentSection];
-  document.getElementById('lightbox-counter').textContent =
-    (currentIndex + 1) + ' / ' + photos.length;
-}
+  function openLightbox(section, index) {
+    currentSection = section;
+    currentIndex = index;
+    updateLightbox();
+    lightbox.classList.add('active');
+    document.body.classList.add('lightbox-open');
+    document.body.style.overflow = 'hidden';
+  }
 
-function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('active');
-  document.body.classList.remove('lightbox-open');
-  document.body.style.overflow = '';
-}
+  function updateLightbox() {
+    var photos = sectionPhotos[currentSection];
+    if (!photos || !photos[currentIndex]) return;
+    var photo = photos[currentIndex];
+    lbImg.src = photo.src;
+    lbCaption.textContent = photo.caption;
+    lbLocation.textContent = photo.location;
+    lbYear.textContent = photo.year;
+    lbSection.textContent = sectionNames[currentSection] || currentSection;
+    lbCounter.textContent = (currentIndex + 1) + ' / ' + photos.length;
+  }
 
-function changePhoto(direction) {
-  const photos = sectionPhotos[currentSection];
-  currentIndex = (currentIndex + direction + photos.length) % photos.length;
-  updateLightbox();
-}
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.classList.remove('lightbox-open');
+    document.body.style.overflow = '';
+  }
 
-// Close on clicking dark background
-document.getElementById('lightbox').addEventListener('click', function(e) {
-  if (e.target === this) closeLightbox();
-});
+  function changePhoto(direction) {
+    var photos = sectionPhotos[currentSection];
+    if (!photos) return;
+    currentIndex = (currentIndex + direction + photos.length) % photos.length;
+    updateLightbox();
+  }
 
-// Keyboard navigation
-document.addEventListener('keydown', function(e) {
-  if (!document.getElementById('lightbox').classList.contains('active')) return;
-  if (e.key === 'Escape') closeLightbox();
-  if (e.key === 'ArrowRight') changePhoto(1);
-  if (e.key === 'ArrowLeft') changePhoto(-1);
-});
+  // Click on any masonry item to open lightbox
+  document.querySelectorAll('.masonry-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+      var section = this.getAttribute('data-section');
+      var index = parseInt(this.getAttribute('data-index'), 10);
+      if (section !== null && !isNaN(index)) {
+        openLightbox(section, index);
+      }
+    });
+  });
+
+  // Close buttons
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  document.getElementById('lightbox-back').addEventListener('click', closeLightbox);
+
+  // Nav buttons
+  document.getElementById('lightbox-prev').addEventListener('click', function(e) {
+    e.stopPropagation();
+    changePhoto(-1);
+  });
+  document.getElementById('lightbox-next').addEventListener('click', function(e) {
+    e.stopPropagation();
+    changePhoto(1);
+  });
+
+  // Click dark area to close
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') changePhoto(1);
+    if (e.key === 'ArrowLeft') changePhoto(-1);
+  });
+
+})();
 </script>
