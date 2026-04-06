@@ -1,89 +1,89 @@
 
 treks:
 
-- file: images/photography/treks/lake_kuari_pass.jpeg
+- file: photography/treks/lake_kuari_pass.jpeg
     location: "Tali lake, Auli, Uttarakhand"
     caption: "Tali lake enroute Kuari Pass at 3550m"
     year: 2019
 
    
-- file: images/photography/treks/trek_kuari_pass_3.jpeg
+- file: photography/treks/trek_kuari_pass_3.jpeg
     location: "Kuari Pass, Uttarakhand"
     caption: "First light over the tents at 3670m"
     year: 2019
          
-- file: images/photography/treks/trek_kuari_pass.jpeg
+- file: photography/treks/trek_kuari_pass.jpeg
     location: "Nearing Kuari Pass"
     caption: "Joy before summit"
     year: 2019
     
 
-- file: images/photography/treks/pindar_trek_river_bridge.jpeg
+- file: photography/treks/pindar_trek_river_bridge.jpeg
     location: "Enroute Pindari Glacier , Uttarakhand"
     caption: "A wooden bridge"
     year: 2021
 
     
 travels:
-  - file: images/photography/travels/dubai.jpeg
+  - file: photography/travels/dubai.jpeg
     location: "Dubai, UAE"
     caption: "The tower of joy"
     year: 2024
 
-  - file: images/photography/travels/vienna_austria_2.jpeg
+  - file: photography/travels/vienna_austria_2.jpeg
     location: "Vienna, Austria"
     caption: "After EGU 2024 - Belvedere Palace"
     year: 2024
 
-  - file: images/photography/travels/prague_1.jpeg
+  - file: photography/travels/prague_1.jpeg
     location: "Prague, Czech Republic"
     caption: "Through narrow lanes"
     year: 2024
 
-  - file: images/photography/travels/bratislava.jpeg
+  - file: photography/travels/bratislava.jpeg
     location: "Bratislava, Slovakia"
     caption: "Old Town at golden hour"
     year: 2024
 
-   - file: images/photography/travels/liberty_.jpeg
+   - file: photography/travels/liberty_.jpeg
     location: "New York, USA"
     caption: "Liberty behind us"
     year: 2024
   
-  - file: images/photography/travels/manhattan.jpeg
+  - file: photography/travels/manhattan.jpeg
     location: "New York, USA"
     caption: "Manhattan skyline"
     year: 2024
 
-  - file: images/photography/travels/white_house.jpeg
+  - file: photography/travels/white_house.jpeg
     location: "Washington D.C., USA"
     caption: "The White House"
     year: 2024
 
 wildlife:
-  - file: images/photography/wildlife/IMG_0380.JPG
+  - file: photography/wildlife/IMG_0380.JPG
     location: "Mysore"
     caption: "I am the king!"
     year: 2018
 
-  - file: images/photography/wildlife/IMG_0561.JPG
+  - file: photography/wildlife/IMG_0561.JPG
     location: "Mysore"
     caption: "I can pose!"
     year: 2018
 
 nature:
 
-  - file: images/photography/travels/goa_sun_set.JPG
+  - file: photography/travels/goa_sun_set.JPG
     location: "Goa"
     caption: "the majestic sunset"
     year: 2014
     
-  - file: images/photography/nature/ladakh.jpeg
+  - file: photography/nature/ladakh.jpeg
     location: "Manali-Leh Highway"
     caption: "Enroute Leh"
     year: 2018
 
-  - file: images/photography/travels/kerala_clock_tower.jpeg
+  - file: photography/travels/kerala_clock_tower.jpeg
     location: "Kerala"
     caption: "Chasing monsoon in Kerala"
     year: 2018
