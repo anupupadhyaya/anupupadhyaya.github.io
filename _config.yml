@@ -135,11 +135,10 @@ social:
   name                   :
   links:
 
-# Analytics
 analytics:
-  provider               : "false"
+  provider               : "google-gtag"
   google:
-    tracking_id          :
+    tracking_id          : "G-28FK9NWLVN"
 
 # Reading Files
 include:
