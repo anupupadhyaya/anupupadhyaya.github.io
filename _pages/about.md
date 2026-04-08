@@ -310,7 +310,7 @@ to real risks faced by Himalayan communities.
   <div class="work-title">PhD Research Fellow</div>
   <div class="work-org">IIT Kharagpur &nbsp;|&nbsp; July 2019 to Present</div>
   <ul class="work-points">
-    <li>Statistical analysis of extreme climate events, GLOFs, and landslide susceptibility in the NW Himalayas</li>
+    <li>Statistical analysis of extreme climate events including heatwaves and extreme precipitaion events in the NW Himalayas</li>
     <li>MCDM-based GLOF susceptibility assessment and machine learning for landslide susceptibility mapping in the NW Himalayas</li>
     <li>HEC-RAS 2D hydrodynamic modelling for glacial lake outburst flood propagation</li>
   </ul>
