@@ -178,12 +178,17 @@ author_profile: true
 
 <div class="pub-card first-author">
   <div class="pub-title">
-    Intensifying Precipitation Extremes and Landslide Susceptibility using Machine Learning in the Upper Ganga Sub-Basin, India
+    <a href="https://doi.org/10.1016/j.asr.2026.04.021" target="_blank">
+      Intensifying Precipitation Extremes and Landslide Susceptibility using Machine Learning in the Upper Ganga Sub-Basin, India
+    </a>
   </div>
   <div class="pub-authors"><strong>Upadhyaya, A.</strong> &amp; Rai, A.K.</div>
   <div class="pub-venue"><em>Advances in Space Research</em> (2025)</div>
   <span class="pub-badge badge-first">First Author</span>
   <span class="pub-badge badge-inpress">In Press</span>
+  <div class="pub-links">
+    <a href="https://doi.org/10.1016/j.asr.2026.04.021" target="_blank">View Paper</a>
+  </div>
 </div>
 
 <div class="pub-card first-author">
