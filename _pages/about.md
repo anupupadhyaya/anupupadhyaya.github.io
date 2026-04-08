@@ -357,7 +357,7 @@ to real risks faced by Himalayan communities.
   <div class="achieve-item">
     <div class="achieve-text">
       <strong>Prime Minister's Research Fellow</strong>
-      <span class="achieve-detail">Government of India</span>
+      <span class="achieve-detail">Ministry of Education, Government of India</span>
     </div>
     <div class="achieve-year">December 2020</div>
   </div>
