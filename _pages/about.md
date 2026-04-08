@@ -165,7 +165,7 @@ redirect_from:
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  padding: 10px 0;
+  padding: 12px 0;
   border-bottom: 1px solid rgba(128,128,128,0.08);
   font-size: 0.9em;
   color: var(--global-text-color);
@@ -175,15 +175,25 @@ redirect_from:
 }
 .achieve-text {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
   line-height: 1.55;
 }
 .achieve-text strong {
   color: var(--global-text-color);
 }
+.achieve-detail {
+  font-style: italic;
+  font-size: 0.88em;
+  color: var(--global-text-color);
+  opacity: 0.55;
+}
 .achieve-year {
   font-size: 0.8em;
   opacity: 0.5;
   white-space: nowrap;
+  padding-top: 2px;
 }
 
 /* ── Skills ── */
@@ -337,27 +347,42 @@ to real risks faced by Himalayan communities.
 
 <div class="achieve-wrapper">
   <div class="achieve-item">
-    <div class="achieve-text"><strong>Best Oral Presentation Award</strong> &nbsp;|&nbsp; Research Scholar Day, CORAL, IIT Kharagpur</div>
+    <div class="achieve-text">
+      <strong>Best Oral Presentation Award</strong>
+      <span class="achieve-detail">Research Scholar Day, CORAL, IIT Kharagpur</span>
+    </div>
     <div class="achieve-year">January 2024</div>
   </div>
 
   <div class="achieve-item">
-    <div class="achieve-text"><strong>Prime Minister's Research Fellow</strong>&nbsp;|&nbsp; Government of India</div>
+    <div class="achieve-text">
+      <strong>Prime Minister's Research Fellow</strong>
+      <span class="achieve-detail">Government of India</span>
+    </div>
     <div class="achieve-year">December 2020</div>
   </div>
   
   <div class="achieve-item">
-    <div class="achieve-text"><strong>Gold Medal</strong> &nbsp;|&nbsp; M.Sc. Applied Geology, University of Mysore</div>
+    <div class="achieve-text">
+      <strong>Gold Medal</strong>
+      <span class="achieve-detail">M.Sc. Applied Geology, University of Mysore</span>
+    </div>
     <div class="achieve-year">2019</div>
   </div>
 
   <div class="achieve-item">
-    <div class="achieve-text"><strong>GATE 2019</strong> &nbsp;|&nbsp; All India Ranking 430, Score 487</div>
+    <div class="achieve-text">
+      <strong>GATE 2019</strong>
+      <span class="achieve-detail">All India Ranking 430, Score 487</span>
+    </div>
     <div class="achieve-year">2019</div>
   </div>
 
   <div class="achieve-item">
-    <div class="achieve-text"><strong>KSET 2018</strong> &nbsp;|&nbsp; Karnataka State Eligibility Test for Lectureship</div>
+    <div class="achieve-text">
+      <strong>KSET 2018</strong>
+      <span class="achieve-detail">Karnataka State Eligibility Test for Lectureship</span>
+    </div>
     <div class="achieve-year">2018</div>
   </div>
 </div>
