@@ -272,8 +272,8 @@ to real risks faced by Himalayan communities.
   <li>Investigated heatwaves, extreme precipitation, glacial lake outburst floods, and landslide susceptibility across the Northwest Himalayas</li>
   <li>Applied MCDM to identify potentially dangerous glacial lakes and performed HEC-RAS 2D hydrodynamic modelling for glacial lake flood propagation</li>
   <li>Applied machine learning methods (Random Forest, XGBoost, SVM) for spatial susceptibility mapping of landslides </li>
-  <li>Processed satellite and reanalysis datasets including Landsat, Sentinel-2, MODIS, and ERA5 using Python and Google Earth Engine</li>
   <li>Analysed CMIP6 projections under multiple SSP scenarios and applied causal discovery methods including PCMCI+</li>
+  <li>Processed satellite and reanalysis datasets including Landsat, Sentinel-2, MODIS, and ERA5 using Python and Google Earth Engine</li>
 
 </ul>
 </div>
@@ -310,7 +310,7 @@ to real risks faced by Himalayan communities.
   <div class="work-title">PhD Research Fellow</div>
   <div class="work-org">IIT Kharagpur &nbsp;|&nbsp; July 2019 to Present</div>
   <ul class="work-points">
-    <li>Statistical analysis of extreme climate events including heatwaves and extreme precipitaion events in the NW Himalayas</li>
+    <li>Statistical analysis and future projections of extreme climate events including heatwaves and extreme precipitaion events in the NW Himalayas</li>
     <li>MCDM-based GLOF susceptibility assessment and machine learning for landslide susceptibility mapping in the NW Himalayas</li>
     <li>HEC-RAS 2D hydrodynamic modelling for glacial lake outburst flood propagation</li>
   </ul>
