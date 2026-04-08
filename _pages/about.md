@@ -51,6 +51,27 @@ redirect_from:
   color: var(--global-text-color);
   text-align: justify;
 }
+.research-points {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0;
+}
+.research-points li {
+  font-size: 0.92em;
+  color: var(--global-text-color);
+  opacity: 0.85;
+  padding: 4px 0 4px 18px;
+  position: relative;
+  line-height: 1.6;
+  text-align: justify;
+}
+.research-points li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #2a7ae2;
+  opacity: 0.6;
+}
 
 /* ── Education Cards ── */
 .edu-card {
@@ -246,6 +267,14 @@ catastrophic floods.
 The work moves from atmosphere to hillslope to river valley, using climate models, 
 machine learning, remote sensing, and flood simulation to connect a warming climate 
 to real risks faced by Himalayan communities.
+
+<ul class="research-points">
+  <li>Investigated heatwaves, extreme precipitation, glacial lake outburst floods, and landslide susceptibility across the Northwest Himalayas</li>
+  <li>Applied machine learning methods (Random Forest, XGBoost, SVM) for spatial susceptibility mapping of landslides and glacial lake hazards</li>
+  <li>Processed satellite and reanalysis datasets including Landsat, Sentinel-2, MODIS, and ERA5 using Python and Google Earth Engine</li>
+  <li>Analysed CMIP6 projections under multiple SSP scenarios and applied causal discovery methods including PCMCI+</li>
+  <li>Performed WRF simulations on IIT Kharagpur's Param Shakti HPC facility and conducted HEC-RAS 2D hydrodynamic modelling for glacial lake flood propagation</li>
+</ul>
 </div>
 
 <div class="about-section-title">Education</div>
@@ -309,16 +338,25 @@ to real risks faced by Himalayan communities.
     <div class="achieve-year">December 2020</div>
   </div>
 
-<!-- FIND THESE (5 lines with &mdash;) -->
+  <div class="achieve-item">
+    <div class="achieve-text"><strong>Best Oral Presentation Award</strong> &nbsp;|&nbsp; Research Scholar Day, CORAL, IIT Kharagpur</div>
+    <div class="achieve-year">January 2024</div>
+  </div>
 
-<div class="achieve-text"><strong>Best Oral Presentation Award</strong> &mdash; Research Scholar Day, CORAL, IIT Kharagpur</div>
+  <div class="achieve-item">
+    <div class="achieve-text"><strong>Gold Medal</strong> &nbsp;|&nbsp; M.Sc. Applied Geology, University of Mysore</div>
+    <div class="achieve-year">2019</div>
+  </div>
 
-<div class="achieve-text"><strong>Gold Medal</strong> &mdash; M.Sc. Applied Geology, University of Mysore</div>
+  <div class="achieve-item">
+    <div class="achieve-text"><strong>GATE 2019</strong> &nbsp;|&nbsp; AIR 430, Score 487</div>
+    <div class="achieve-year">2019</div>
+  </div>
 
-<div class="achieve-text"><strong>GATE 2019</strong> &mdash; AIR 430, Score 487</div>
-
-<div class="achieve-text"><strong>KSET 2018</strong> &mdash; Karnataka State Eligibility Test for Lectureship</div>
-
+  <div class="achieve-item">
+    <div class="achieve-text"><strong>KSET 2018</strong> &nbsp;|&nbsp; Karnataka State Eligibility Test for Lectureship</div>
+    <div class="achieve-year">2018</div>
+  </div>
 </div>
 
 <div class="about-section-title">Skills</div>
@@ -329,12 +367,21 @@ to real risks faced by Himalayan communities.
     <div class="skill-tags">
       <span class="skill-tag">Python</span>
       <span class="skill-tag">R</span>
-      <span class="skill-tag">Statistical Modelling</span>
-      <span class="skill-tag">Machine Learning</span>
     </div>
   </div>
   <div class="skill-group">
-    <div class="skill-label">Geospatial</div>
+    <div class="skill-label">Python Libraries</div>
+    <div class="skill-tags">
+      <span class="skill-tag">scikit-learn</span>
+      <span class="skill-tag">pandas</span>
+      <span class="skill-tag">xarray</span>
+      <span class="skill-tag">rasterio</span>
+      <span class="skill-tag">matplotlib</span>
+      <span class="skill-tag">numpy</span>
+    </div>
+  </div>
+  <div class="skill-group">
+    <div class="skill-label">Geospatial Tools</div>
     <div class="skill-tags">
       <span class="skill-tag">ArcGIS</span>
       <span class="skill-tag">QGIS</span>
@@ -343,19 +390,42 @@ to real risks faced by Himalayan communities.
     </div>
   </div>
   <div class="skill-group">
-    <div class="skill-label">Climate & Hydrologic Modelling</div>
+    <div class="skill-label">Satellite Data</div>
     <div class="skill-tags">
-      <span class="skill-tag">WRF</span>
-      <span class="skill-tag">HEC-RAS 2D</span>
-      <span class="skill-tag">CMIP6</span>
+      <span class="skill-tag">Landsat</span>
+      <span class="skill-tag">Sentinel-2</span>
+      <span class="skill-tag">MODIS</span>
+      <span class="skill-tag">ASTER DEM</span>
+      <span class="skill-tag">SRTM</span>
+      <span class="skill-tag">ALOS PALSAR</span>
     </div>
   </div>
   <div class="skill-group">
-    <div class="skill-label">Methods</div>
+    <div class="skill-label">Reanalysis & Climate Data</div>
     <div class="skill-tags">
-      <span class="skill-tag">Machine Learning</span>
+      <span class="skill-tag">ERA5</span>
+      <span class="skill-tag">ERA5-Land</span>
+      <span class="skill-tag">CMIP6</span>
+      <span class="skill-tag">SSP Scenarios</span>
+      <span class="skill-tag">Bias Correction</span>
+    </div>
+  </div>
+  <div class="skill-group">
+    <div class="skill-label">Modelling</div>
+    <div class="skill-tags">
+      <span class="skill-tag">WRF</span>
+      <span class="skill-tag">HEC-RAS 2D</span>
+      <span class="skill-tag">Random Forest</span>
+      <span class="skill-tag">XGBoost</span>
+      <span class="skill-tag">SVM</span>
       <span class="skill-tag">MCDM</span>
-      <span class="skill-tag">Statistical Analysis</span>
+    </div>
+  </div>
+  <div class="skill-group">
+    <div class="skill-label">Other</div>
+    <div class="skill-tags">
+      <span class="skill-tag">Param Shakti HPC</span>
+      <span class="skill-tag">DGPS Surveying</span>
     </div>
   </div>
 </div>
