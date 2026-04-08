@@ -326,7 +326,7 @@ to real risks faced by Himalayan communities.
   </ul>
 </div>
 
-<div class="work-card featured">
+<div class="work-card">
   <div class="work-title">Consultant (Statistical Analyst)</div>
   <div class="work-org">Ministry of Environment, Forest and Climate Change (MoEFCC), New Delhi &nbsp;|&nbsp; June to September 2025</div>
   <ul class="work-points">
