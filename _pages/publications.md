@@ -114,6 +114,10 @@ author_profile: true
   background: rgba(128,128,128,0.12);
   color: #777;
 }
+.badge-inpress {
+  background: rgba(230,126,34,0.12);
+  color: #e67e22;
+}
 
 .pub-links {
   margin-top: 10px;
@@ -133,18 +137,54 @@ author_profile: true
 .pub-links a:hover {
   background: #1a5cb0;
 }
+
+/* ── Peer Review ── */
+.review-wrapper {
+  padding-left: 28px;
+}
+.review-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(128,128,128,0.08);
+  font-size: 0.9em;
+  color: var(--global-text-color);
+}
+.review-item:last-child {
+  border-bottom: none;
+}
+.review-journal {
+  flex: 1;
+  font-style: italic;
+}
+.review-count {
+  font-size: 0.8em;
+  opacity: 0.5;
+  white-space: nowrap;
+}
 </style>
 
 <div class="pub-summary">
-  <div class="pub-count">6 Peer-Reviewed Publications</div>
-  <div class="pub-detail">4 as first author · 2 as co-author</div>
+  <div class="pub-count">7 Peer-Reviewed Publications</div>
+  <div class="pub-detail">5 as first author · 2 as co-author</div>
   <div class="pub-profiles">
     <a href="https://scholar.google.com/citations?user=aR0WS0wAAAAJ&hl=en" target="_blank">Google Scholar</a> ·
     <a href="https://orcid.org/0000-0001-9789-049X" target="_blank">ORCID</a>
   </div>
 </div>
 
-<div class="pub-section-title">📄 First-Author Publications</div>
+<div class="pub-section-title">First-Author Publications</div>
+
+<div class="pub-card first-author">
+  <div class="pub-title">
+    Intensifying Precipitation Extremes and Landslide Susceptibility using Machine Learning in the Upper Ganga Sub-Basin, India
+  </div>
+  <div class="pub-authors"><strong>Upadhyaya, A.</strong> &amp; Rai, A.K.</div>
+  <div class="pub-venue"><em>Advances in Space Research</em> (2025)</div>
+  <span class="pub-badge badge-first">First Author</span>
+  <span class="pub-badge badge-inpress">In Press</span>
+</div>
 
 <div class="pub-card first-author">
   <div class="pub-title">
@@ -156,7 +196,7 @@ author_profile: true
   <div class="pub-venue"><em>Natural Hazards</em>, 122, 292 (2026)</div>
   <span class="pub-badge badge-first">First Author</span>
   <div class="pub-links">
-    <a href="https://doi.org/10.1007/s11069-026-08056-2" target="_blank">📄 View Paper</a>
+    <a href="https://doi.org/10.1007/s11069-026-08056-2" target="_blank">View Paper</a>
   </div>
 </div>
 
@@ -170,7 +210,7 @@ author_profile: true
   <div class="pub-venue"><em>Environmental Science and Pollution Research</em> (2025)</div>
   <span class="pub-badge badge-first">First Author</span>
   <div class="pub-links">
-    <a href="https://doi.org/10.1007/s11356-025-36346-y" target="_blank">📄 View Paper</a>
+    <a href="https://doi.org/10.1007/s11356-025-36346-y" target="_blank">View Paper</a>
   </div>
 </div>
 
@@ -184,7 +224,7 @@ author_profile: true
   <div class="pub-venue"><em>Pure and Applied Geophysics</em> (2024)</div>
   <span class="pub-badge badge-first">First Author</span>
   <div class="pub-links">
-    <a href="https://doi.org/10.1007/s00024-024-03542-9" target="_blank">📄 View Paper</a>
+    <a href="https://doi.org/10.1007/s00024-024-03542-9" target="_blank">View Paper</a>
   </div>
 </div>
 
@@ -198,11 +238,11 @@ author_profile: true
   <div class="pub-venue"><em>Theoretical and Applied Climatology</em> (2022)</div>
   <span class="pub-badge badge-first">First Author</span>
   <div class="pub-links">
-    <a href="https://doi.org/10.1007/s00704-022-04280-5" target="_blank">📄 View Paper</a>
+    <a href="https://doi.org/10.1007/s00704-022-04280-5" target="_blank">View Paper</a>
   </div>
 </div>
 
-<div class="pub-section-title">🤝 Co-Authored Publications</div>
+<div class="pub-section-title">Co-Authored Publications</div>
 
 <div class="pub-card">
   <div class="pub-title">
@@ -214,20 +254,45 @@ author_profile: true
   <div class="pub-venue"><em>Science of the Total Environment</em>, 818, 151788 (2021)</div>
   <span class="pub-badge badge-coauthor">Co-Author</span>
   <div class="pub-links">
-    <a href="https://doi.org/10.1016/j.scitotenv.2021.151788" target="_blank">📄 View Paper</a>
+    <a href="https://doi.org/10.1016/j.scitotenv.2021.151788" target="_blank">View Paper</a>
   </div>
 </div>
 
 <div class="pub-card">
   <div class="pub-title">
     <a href="https://doi.org/10.30564/jasr.v7i2.6268" target="_blank">
-      Study of Cold Wave and Cold Stress in the Four Metropolitan Cities of India for the Period 1985–2020
+      Study of Cold Wave and Cold Stress in the Four Metropolitan Cities of India for the Period 1985 to 2020
     </a>
   </div>
   <div class="pub-authors">Kumar, P., Chakraborty, A., Sharma, S., Hasan, M.S.U., &amp; <strong>Upadhyaya, A.</strong></div>
-  <div class="pub-venue"><em>Journal of Atmospheric Science Research</em>, 7(2), 83–113 (2024)</div>
+  <div class="pub-venue"><em>Journal of Atmospheric Science Research</em>, 7(2), 83 to 113 (2024)</div>
   <span class="pub-badge badge-coauthor">Co-Author</span>
   <div class="pub-links">
-    <a href="https://doi.org/10.30564/jasr.v7i2.6268" target="_blank">📄 View Paper</a>
+    <a href="https://doi.org/10.30564/jasr.v7i2.6268" target="_blank">View Paper</a>
+  </div>
+</div>
+
+<div class="pub-section-title">Peer Review Service</div>
+
+<div class="review-wrapper">
+  <div class="review-item">
+    <div class="review-journal">Discover Geoscience</div>
+    <div class="review-count">4 reviews</div>
+  </div>
+  <div class="review-item">
+    <div class="review-journal">Theoretical and Applied Climatology</div>
+    <div class="review-count">3 reviews</div>
+  </div>
+  <div class="review-item">
+    <div class="review-journal">Advances in Space Research</div>
+    <div class="review-count">2 reviews</div>
+  </div>
+  <div class="review-item">
+    <div class="review-journal">International Journal of Remote Sensing</div>
+    <div class="review-count">1 review</div>
+  </div>
+  <div class="review-item">
+    <div class="review-journal">Scientific Reports</div>
+    <div class="review-count">1 review</div>
   </div>
 </div>
