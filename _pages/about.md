@@ -441,19 +441,19 @@ to real risks faced by Himalayan communities.
   <div class="skill-group">
     <div class="skill-label">Modelling</div>
     <div class="skill-tags">
-      <span class="skill-tag">WRF</span>
+      <span class="skill-tag">MCDM</span>
       <span class="skill-tag">HEC-RAS 2D</span>
       <span class="skill-tag">Random Forest</span>
       <span class="skill-tag">XGBoost</span>
       <span class="skill-tag">SVM</span>
-      <span class="skill-tag">MCDM</span>
+      <span class="skill-tag">WRF</span>
     </div>
   </div>
   <div class="skill-group">
     <div class="skill-label">Other</div>
     <div class="skill-tags">
-      <span class="skill-tag">High Performance Computing</span>
       <span class="skill-tag">DGPS Surveying</span>
+      <span class="skill-tag">High Performance Computing</span>
     </div>
   </div>
 </div>
