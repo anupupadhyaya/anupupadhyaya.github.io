@@ -240,7 +240,7 @@ author_profile: true
     </a>
   </div>
   <div class="pub-authors"><strong>Upadhyaya, A.</strong>, Rai, A.K., &amp; Kumar, P.</div>
-  <div class="pub-venue"><em>Theoretical and Applied Climatology</em> (2022)</div>
+  <div class="pub-venue"><em>Theoretical and Applied Climatology</em> (2023)</div>
   <span class="pub-badge badge-first">First Author</span>
   <div class="pub-links">
     <a href="https://doi.org/10.1007/s00704-022-04280-5" target="_blank">View Paper</a>
