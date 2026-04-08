@@ -342,7 +342,7 @@ to real risks faced by Himalayan communities.
   </div>
 
   <div class="achieve-item">
-    <div class="achieve-text"><strong>Prime Minister's Research Fellow</strong></div>
+    <div class="achieve-text"><strong>Prime Minister's Research Fellow</strong>&nbsp;|&nbsp; Government of India</div>
     <div class="achieve-year">December 2020</div>
   </div>
   
@@ -352,7 +352,7 @@ to real risks faced by Himalayan communities.
   </div>
 
   <div class="achieve-item">
-    <div class="achieve-text"><strong>GATE 2019</strong> &nbsp;|&nbsp; AIR 430, Score 487</div>
+    <div class="achieve-text"><strong>GATE 2019</strong> &nbsp;|&nbsp; All India Ranking 430, Score 487</div>
     <div class="achieve-year">2019</div>
   </div>
 
