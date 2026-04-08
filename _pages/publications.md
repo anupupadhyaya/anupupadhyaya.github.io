@@ -183,7 +183,7 @@ author_profile: true
     </a>
   </div>
   <div class="pub-authors"><strong>Upadhyaya, A.</strong> &amp; Rai, A.K.</div>
-  <div class="pub-venue"><em>Advances in Space Research</em> (2025)</div>
+  <div class="pub-venue"><em>Advances in Space Research</em> (2026)</div>
   <span class="pub-badge badge-first">First Author</span>
   <span class="pub-badge badge-inpress">In Press</span>
   <div class="pub-links">
