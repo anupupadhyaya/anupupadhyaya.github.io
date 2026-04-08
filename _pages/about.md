@@ -270,17 +270,18 @@ to real risks faced by Himalayan communities.
 
 <ul class="research-points">
   <li>Investigated heatwaves, extreme precipitation, glacial lake outburst floods, and landslide susceptibility across the Northwest Himalayas</li>
-  <li>Applied machine learning methods (Random Forest, XGBoost, SVM) for spatial susceptibility mapping of landslides and glacial lake hazards</li>
+  <li>Applied MCDM to identify potentially dangerous glacial lakes and performed HEC-RAS 2D hydrodynamic modelling for glacial lake flood propagation</li>
+  <li>Applied machine learning methods (Random Forest, XGBoost, SVM) for spatial susceptibility mapping of landslides </li>
   <li>Processed satellite and reanalysis datasets including Landsat, Sentinel-2, MODIS, and ERA5 using Python and Google Earth Engine</li>
   <li>Analysed CMIP6 projections under multiple SSP scenarios and applied causal discovery methods including PCMCI+</li>
-  <li>Performed WRF simulations on IIT Kharagpur's Param Shakti HPC facility and conducted HEC-RAS 2D hydrodynamic modelling for glacial lake flood propagation</li>
+
 </ul>
 </div>
 
 <div class="about-section-title">Education</div>
 
 <div class="edu-card highlight">
-  <div class="edu-degree">Ph.D. in Climate Change & Extreme Events</div>
+  <div class="edu-degree">Ph.D. in Extreme Events and Natural Hazards</div>
   <div class="edu-meta">IIT Kharagpur &nbsp;|&nbsp; 2019 to Present</div>
   <div class="edu-note">Prime Minister's Research Fellow</div>
 </div>
@@ -304,21 +305,23 @@ to real risks faced by Himalayan communities.
 
 <div class="about-section-title">Work Experience</div>
 
-<div class="work-card featured">
-  <div class="work-title">Consultant (Statistical Analyst)</div>
-  <div class="work-org">Ministry of Environment, Forest and Climate Change (MoEFCC), New Delhi &nbsp;|&nbsp; June to September 2025</div>
-  <ul class="work-points">
-    <li>Analysed global indices including the Environmental Performance Index and Climate Change Performance Index</li>
-    <li>Reviewed UN technical reports and provided statistical inputs for national climate assessments</li>
-  </ul>
-</div>
 
 <div class="work-card featured">
   <div class="work-title">PhD Research Fellow</div>
   <div class="work-org">IIT Kharagpur &nbsp;|&nbsp; July 2019 to Present</div>
   <ul class="work-points">
     <li>Statistical analysis of extreme climate events, GLOFs, and landslide susceptibility in the NW Himalayas</li>
-    <li>High-performance computing using IIT Kharagpur's Param Shakti facility (WRF model runs)</li>
+    <li>MCDM-based GLOF susceptibility assessment and machine learning for landslide susceptibility mapping in the NW Himalayas</li>
+    <li>HEC-RAS 2D hydrodynamic modelling for glacial lake outburst flood propagation</li>
+  </ul>
+</div>
+
+<div class="work-card featured">
+  <div class="work-title">Consultant (Statistical Analyst)</div>
+  <div class="work-org">Ministry of Environment, Forest and Climate Change (MoEFCC), New Delhi &nbsp;|&nbsp; June to September 2025</div>
+  <ul class="work-points">
+    <li>Analysed global indices including the Environmental Performance Index and Climate Change Performance Index</li>
+    <li>Reviewed UN technical reports and provided statistical inputs for national climate assessments</li>
   </ul>
 </div>
 
@@ -334,15 +337,15 @@ to real risks faced by Himalayan communities.
 
 <div class="achieve-wrapper">
   <div class="achieve-item">
-    <div class="achieve-text"><strong>Prime Minister's Research Fellow</strong></div>
-    <div class="achieve-year">December 2020</div>
-  </div>
-
-  <div class="achieve-item">
     <div class="achieve-text"><strong>Best Oral Presentation Award</strong> &nbsp;|&nbsp; Research Scholar Day, CORAL, IIT Kharagpur</div>
     <div class="achieve-year">January 2024</div>
   </div>
 
+  <div class="achieve-item">
+    <div class="achieve-text"><strong>Prime Minister's Research Fellow</strong></div>
+    <div class="achieve-year">December 2020</div>
+  </div>
+  
   <div class="achieve-item">
     <div class="achieve-text"><strong>Gold Medal</strong> &nbsp;|&nbsp; M.Sc. Applied Geology, University of Mysore</div>
     <div class="achieve-year">2019</div>
@@ -424,7 +427,7 @@ to real risks faced by Himalayan communities.
   <div class="skill-group">
     <div class="skill-label">Other</div>
     <div class="skill-tags">
-      <span class="skill-tag">Param Shakti HPC</span>
+      <span class="skill-tag">High Performance Computing</span>
       <span class="skill-tag">DGPS Surveying</span>
     </div>
   </div>
