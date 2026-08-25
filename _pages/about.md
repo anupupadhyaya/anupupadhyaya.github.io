@@ -302,7 +302,7 @@ in one of the world's most climate-sensitive landscapes.
 </div>
 
 <div class="status-notice">
-  <strong>Currently:</strong> PhD Thesis submitted. Heading to
+  <strong>Currently:</strong> PhD thesis submitted. Heading to
   <a href="https://engineering.purdue.edu/CCE" target="_blank">Purdue University</a>, USA
   for a research visit from October to November 2026.
 </div>
