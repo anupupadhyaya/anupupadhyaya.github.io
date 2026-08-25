@@ -187,9 +187,8 @@ author_profile: true
     </a>
   </div>
   <div class="pub-authors"><strong>Upadhyaya, A.</strong> &amp; Rai, A.K.</div>
-  <div class="pub-venue"><em>Advances in Space Research</em> (2026)</div>
+  <div class="pub-venue"><em>Advances in Space Research</em>, 77(12), 11894 to 11913 (2026)</div>
   <span class="pub-badge badge-first">First Author</span>
-  <span class="pub-badge badge-inpress">In Press</span>
   <div class="pub-links">
     <a href="https://doi.org/10.1016/j.asr.2026.04.021" target="_blank">View Paper</a>
   </div>
