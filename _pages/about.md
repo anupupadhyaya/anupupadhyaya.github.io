@@ -157,6 +157,36 @@ redirect_from:
   opacity: 0.6;
 }
 
+.status-notice {
+  margin: 1.4em 0 0.4em;
+  padding: 0.85em 1.1em;
+  font-size: 0.88em;
+  line-height: 1.6;
+  border-left: 3px solid #2a7ae2;
+  background: rgba(42,122,226,0.05);
+  border-radius: 0 5px 5px 0;
+  color: var(--global-text-color);
+}
+.status-notice a {
+  color: #2a7ae2;
+  text-decoration: none;
+  border-bottom: 1px dotted #2a7ae2;
+}
+
+.work-flag {
+  display: inline-block;
+  font-size: 0.62em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 2px 8px;
+  margin-left: 8px;
+  border-radius: 20px;
+  vertical-align: middle;
+  background: rgba(46,160,67,0.12);
+  color: #2ea043;
+}
+
 /* ── Achievements ── */
 .achieve-wrapper {
   padding-left: 28px;
@@ -263,6 +293,11 @@ geospatial modelling, and hydrodynamic simulations to understand and anticipate 
 in one of the world's most climate-sensitive landscapes.
 </div>
 
+<div class="status-notice">
+  <strong>Currently:</strong> thesis submitted. Visiting <a href="https://engineering.purdue.edu/CCE" target="_blank">Purdue University</a>
+  from September to December 2026 under the See D World fellowship, hosted by Prof. Venkatesh Merwade.
+</div>
+
 <div class="about-section-title">PhD Research</div>
 
 <div class="research-card">
@@ -284,6 +319,7 @@ to real risks faced by Himalayan communities.
   <li>Applied machine learning methods (Random Forest, XGBoost, SVM) for spatial susceptibility mapping of landslides </li>
   <li>Analysed CMIP6 projections under multiple SSP scenarios and applied causal discovery methods including PCMCI+</li>
   <li>Processed satellite and reanalysis datasets including Landsat, Sentinel-2, MODIS, and ERA5 using Python and Google Earth Engine</li>
+  <li>Currently extending this work towards multi-phase mass flow simulation with r.avaflow and Sentinel-1 SAR time-series workflows in Google Earth Engine</li>
 
 </ul>
 </div>
@@ -317,6 +353,15 @@ to real risks faced by Himalayan communities.
 
 
 <div class="work-card featured">
+  <div class="work-title">Visiting Researcher <span class="work-flag">Upcoming</span></div>
+  <div class="work-org">Lyles School of Civil and Construction Engineering, Purdue University, USA &nbsp;|&nbsp; September to December 2026</div>
+  <ul class="work-points">
+    <li>Hosted by Prof. Venkatesh Merwade under the See D World fellowship (702 Scheme), IIT Kharagpur</li>
+    <li>Independent research on hydrology and climate, with a departmental seminar and collaboration meetings</li>
+  </ul>
+</div>
+
+<div class="work-card featured">
   <div class="work-title">PhD Research Fellow</div>
   <div class="work-org">IIT Kharagpur &nbsp;|&nbsp; July 2019 to Present</div>
   <ul class="work-points">
@@ -346,6 +391,30 @@ to real risks faced by Himalayan communities.
 <div class="about-section-title">Academic Achievements</div>
 
 <div class="achieve-wrapper">
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>SLET North East 2026</strong>
+      <span class="achieve-detail">Earth, Atmospheric, Ocean and Planetary Sciences · State Level Eligibility Test for Assistant Professor, North Eastern Region</span>
+    </div>
+    <div class="achieve-year">2026</div>
+  </div>
+
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>See D World Fellowship</strong>
+      <span class="achieve-detail">702 Scheme, IIT Kharagpur, supporting a research visit to Purdue University</span>
+    </div>
+    <div class="achieve-year">2026</div>
+  </div>
+
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>IAEG YEG Travel Grant</strong>
+      <span class="achieve-detail">Young Engineering Geologists Group, IAEG, for the 5th IAEG International Summer School</span>
+    </div>
+    <div class="achieve-year">2026</div>
+  </div>
+
   <div class="achieve-item">
     <div class="achieve-text">
       <strong>Best Oral Presentation Award</strong>
@@ -423,6 +492,7 @@ to real risks faced by Himalayan communities.
       <span class="skill-tag">Landsat</span>
       <span class="skill-tag">Sentinel-2</span>
       <span class="skill-tag">MODIS</span>
+      <span class="skill-tag">Sentinel-1 SAR</span>
       <span class="skill-tag">ASTER DEM</span>
       <span class="skill-tag">SRTM</span>
       <span class="skill-tag">ALOS PALSAR</span>
@@ -443,6 +513,7 @@ to real risks faced by Himalayan communities.
     <div class="skill-tags">
       <span class="skill-tag">MCDM</span>
       <span class="skill-tag">HEC-RAS 2D</span>
+      <span class="skill-tag">r.avaflow</span>
       <span class="skill-tag">Random Forest</span>
       <span class="skill-tag">XGBoost</span>
       <span class="skill-tag">SVM</span>
