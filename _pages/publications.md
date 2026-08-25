@@ -118,6 +118,10 @@ author_profile: true
   background: rgba(230,126,34,0.12);
   color: #e67e22;
 }
+.badge-accepted {
+  background: rgba(46,160,67,0.12);
+  color: #2ea043;
+}
 
 .pub-links {
   margin-top: 10px;
@@ -166,8 +170,8 @@ author_profile: true
 </style>
 
 <div class="pub-summary">
-  <div class="pub-count">7 Peer-Reviewed Publications</div>
-  <div class="pub-detail">5 as first author · 2 as co-author</div>
+  <div class="pub-count">8 Peer-Reviewed Publications</div>
+  <div class="pub-detail">5 as first author · 3 as co-author</div>
   <div class="pub-profiles">
     <a href="https://scholar.google.com/citations?user=aR0WS0wAAAAJ&hl=en" target="_blank">Google Scholar</a> ·
     <a href="https://orcid.org/0000-0001-9789-049X" target="_blank">ORCID</a>
@@ -248,6 +252,16 @@ author_profile: true
 </div>
 
 <div class="pub-section-title">Co-Authored Publications</div>
+
+<div class="pub-card">
+  <div class="pub-title">
+    Tectono-climatic driven orographic precipitation, river processes and the extreme events in the Western Himalayas
+  </div>
+  <div class="pub-authors">Kumar, P., Dubey, C.S., Shekhar, S., Singh, R.P., <strong>Upadhyaya, A.</strong>, Rai, A.K., Ningreichon, A.S., &amp; Rai, J.</div>
+  <div class="pub-venue"><em>Journal of the Geological Society of India</em> (2026)</div>
+  <span class="pub-badge badge-coauthor">Co-Author</span>
+  <span class="pub-badge badge-accepted">Accepted</span>
+</div>
 
 <div class="pub-card">
   <div class="pub-title">
