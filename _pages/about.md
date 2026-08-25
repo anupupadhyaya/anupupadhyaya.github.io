@@ -173,6 +173,14 @@ redirect_from:
   border-bottom: 1px dotted #2a7ae2;
 }
 
+.work-host {
+  font-size: 0.86em;
+  font-style: italic;
+  opacity: 0.7;
+  margin: 4px 0 2px;
+  color: var(--global-text-color);
+}
+
 .work-flag {
   display: inline-block;
   font-size: 0.62em;
@@ -294,8 +302,9 @@ in one of the world's most climate-sensitive landscapes.
 </div>
 
 <div class="status-notice">
-  <strong>Currently:</strong> thesis submitted. Visiting <a href="https://engineering.purdue.edu/CCE" target="_blank">Purdue University</a>, USA
-  from October to November 2026 under the See D World fellowship, hosted by Prof. Venkatesh Merwade.
+  <strong>Currently:</strong> PhD Thesis submitted. Heading to
+  <a href="https://engineering.purdue.edu/CCE" target="_blank">Purdue University</a>, USA
+  for a research visit from October to November 2026.
 </div>
 
 <div class="about-section-title">PhD Research</div>
@@ -355,9 +364,10 @@ to real risks faced by Himalayan communities.
 <div class="work-card featured">
   <div class="work-title">Visiting Researcher <span class="work-flag">Upcoming</span></div>
   <div class="work-org">Lyles School of Civil and Construction Engineering, Purdue University, USA &nbsp;|&nbsp; October to November 2026</div>
+  <div class="work-host">Hosted by Prof. Venkatesh Merwade</div>
   <ul class="work-points">
-    <li>Hosted by Prof. Venkatesh Merwade</li>
-    <li>Research on hydrology and climate, with a departmental seminar and collaboration meetings</li>
+    <li>Research on hydrology and climate modelling</li>
+    <li>Departmental seminar and collaboration meetings with host faculty and student groups</li>
   </ul>
 </div>
 
@@ -402,7 +412,7 @@ to real risks faced by Himalayan communities.
   <div class="achieve-item">
     <div class="achieve-text">
       <strong>See D World Fellowship</strong>
-      <span class="achieve-detail">702 Scheme, IIT Kharagpur, supporting a research visit to Purdue University, USA</span>
+      <span class="achieve-detail">Awarded under the 702 Scheme, IIT Kharagpur, for a doctoral research visit abroad</span>
     </div>
     <div class="achieve-year">2026</div>
   </div>
