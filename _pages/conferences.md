@@ -1,257 +1,530 @@
 ---
-layout: single
-title: "Conferences & Presentations"
-permalink: /conferences/
+permalink: /
+title: "Anup Upadhyaya"
 author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
 ---
 
 <style>
-.conf-section-title {
+/* ── Intro ── */
+.intro-text {
+  font-size: 0.95em;
+  line-height: 1.8;
+  color: var(--global-text-color);
+  margin-bottom: 1.5em;
+  padding-left: 28px;
+  text-align: justify;
+}
+.intro-text a {
+  color: #2a7ae2;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(42,122,226,0.4);
+}
+.intro-text a:hover {
+  border-bottom-color: #2a7ae2;
+}
+
+/* ── Section Titles ── */
+.about-section-title {
   font-size: 1.15em;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 2em 0 1em;
+  margin: 2.2em 0 1em;
   padding-bottom: 6px;
+  padding-left: 28px;
   border-bottom: 2px solid var(--global-border-color);
   color: var(--global-text-color);
 }
 
-.conf-card {
-  margin-bottom: 1.8em;
-  padding: 1.2em 1.4em;
+/* ── Research Card ── */
+.research-card {
+  padding: 1.3em 1.5em;
+  background: rgba(42,122,226,0.04);
+  border-left: 4px solid #2a7ae2;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 1.5em;
+  line-height: 1.75;
+  font-size: 0.93em;
+  color: var(--global-text-color);
+  text-align: justify;
+}
+.research-points {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0;
+}
+.research-points li {
+  font-size: 0.92em;
+  color: var(--global-text-color);
+  opacity: 0.85;
+  padding: 4px 0 4px 18px;
+  position: relative;
+  line-height: 1.6;
+  text-align: justify;
+}
+.research-points li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #2a7ae2;
+  opacity: 0.6;
+}
+
+/* ── Education Cards ── */
+.edu-card {
+  padding: 1em 1.2em;
+  margin-bottom: 10px;
   border-left: 4px solid #ccc;
   background: rgba(128,128,128,0.04);
   border-radius: 0 6px 6px 0;
   transition: all 0.25s ease;
 }
-
-.conf-card:hover {
+.edu-card:hover {
   transform: translateX(3px);
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
-
-.conf-card.major {
-  border-left: 4px solid #2a7ae2;
+.edu-card.highlight {
+  border-left-color: #2a7ae2;
   background: rgba(42,122,226,0.04);
 }
-
-.conf-title {
-  font-size: 1.02em;
+.edu-degree {
   font-weight: 600;
-  margin-bottom: 4px;
+  font-size: 0.95em;
   color: var(--global-text-color);
 }
-
-.conf-title a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px dashed rgba(128,128,128,0.4);
-  transition: border-color 0.2s, color 0.2s;
+.edu-meta {
+  font-size: 0.84em;
+  color: var(--global-text-color);
+  opacity: 0.6;
+  margin-top: 2px;
 }
-
-.conf-title a:hover {
+.edu-note {
+  font-size: 0.8em;
   color: #2a7ae2;
-  border-bottom-color: #2a7ae2;
+  margin-top: 2px;
 }
 
-.conf-venue {
+/* ── Work Cards ── */
+.work-card {
+  padding: 1.2em 1.4em;
+  margin-bottom: 12px;
+  border-left: 4px solid #ccc;
+  background: rgba(128,128,128,0.04);
+  border-radius: 0 6px 6px 0;
+  transition: all 0.25s ease;
+}
+.work-card:hover {
+  transform: translateX(3px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+.work-card.featured {
+  border-left-color: #2a7ae2;
+  background: rgba(42,122,226,0.04);
+}
+.work-title {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: var(--global-text-color);
+}
+.work-org {
+  font-size: 0.85em;
+  color: var(--global-text-color);
+  opacity: 0.65;
+  margin: 2px 0 8px;
+}
+.work-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.work-points li {
+  font-size: 0.85em;
+  color: var(--global-text-color);
+  opacity: 0.8;
+  padding: 3px 0 3px 18px;
+  position: relative;
+  line-height: 1.55;
+  text-align: justify;
+}
+.work-points li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #2a7ae2;
+  opacity: 0.6;
+}
+
+.status-notice {
+  margin: 1.4em 0 0.4em;
+  padding: 0.85em 1.1em;
   font-size: 0.88em;
+  line-height: 1.6;
+  border-left: 3px solid #2a7ae2;
+  background: rgba(42,122,226,0.05);
+  border-radius: 0 5px 5px 0;
   color: var(--global-text-color);
-  opacity: 0.7;
-  margin-bottom: 4px;
 }
-
-.conf-cite {
-  font-size: 0.78em;
-  color: var(--global-text-color);
-  opacity: 0.5;
-  margin-top: 6px;
-  font-family: 'Source Sans 3', sans-serif;
-  line-height: 1.5;
-}
-
-.conf-cite a {
+.status-notice a {
   color: #2a7ae2;
   text-decoration: none;
   border-bottom: 1px dotted #2a7ae2;
 }
 
-.conf-cite a:hover {
-  opacity: 0.8;
-}
-
-.conf-badge {
+.work-flag {
   display: inline-block;
-  font-size: 0.68em;
+  font-size: 0.62em;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: 20px;
-  margin-right: 6px;
-  margin-top: 4px;
   font-weight: 600;
-}
-
-.badge-poster {
-  background: rgba(156,39,176,0.12);
-  color: #9c27b0;
-}
-
-.badge-oral {
-  background: rgba(42,122,226,0.12);
-  color: #2a7ae2;
-}
-
-.badge-attended {
+  padding: 2px 8px;
+  margin-left: 8px;
+  border-radius: 20px;
+  vertical-align: middle;
   background: rgba(46,160,67,0.12);
   color: #2ea043;
 }
 
-.badge-grant {
-  background: rgba(230,145,20,0.14);
-  color: #b26a00;
+/* ── Achievements ── */
+.achieve-wrapper {
+  padding-left: 28px;
 }
-
-.conf-gallery {
+.achieve-item {
   display: flex;
-  gap: 10px;
-  margin-top: 14px;
-  flex-wrap: wrap;
-}
-
-.conf-gallery figure {
-  flex: 1 1 calc(50% - 5px);
-  min-width: 200px;
-  margin: 0;
-}
-
-.conf-gallery img {
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 5px;
-  display: block;
-}
-
-.conf-gallery figcaption {
-  font-size: 0.75em;
-  opacity: 0.55;
-  margin-top: 5px;
-  line-height: 1.4;
-}
-
-.conf-desc {
-  font-size: 0.88em;
-  margin-top: 8px;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(128,128,128,0.08);
+  font-size: 0.9em;
   color: var(--global-text-color);
-  opacity: 0.8;
-  line-height: 1.6;
+}
+.achieve-item:last-child {
+  border-bottom: none;
+}
+.achieve-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1.55;
+}
+.achieve-text strong {
+  color: var(--global-text-color);
+}
+.achieve-detail {
+  font-style: italic;
+  font-size: 0.88em;
+  color: var(--global-text-color);
+  opacity: 0.55;
+}
+.achieve-year {
+  font-size: 0.8em;
+  opacity: 0.5;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+/* ── Skills ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+.skill-group {
+  padding: 1em 1.2em;
+  background: rgba(128,128,128,0.04);
+  border-radius: 6px;
+  border: 1px solid rgba(128,128,128,0.08);
+}
+.skill-label {
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--global-text-color);
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.skill-tag {
+  display: inline-block;
+  font-size: 0.78em;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(42,122,226,0.08);
+  color: #2a7ae2;
+  font-weight: 500;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .intro-text,
+  .about-section-title,
+  .achieve-wrapper {
+    padding-left: 0;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .achieve-item {
+    flex-direction: column;
+    gap: 4px;
+  }
 }
 </style>
 
-A record of conference presentations, workshops, and invited talks.
+<div class="intro-text">
+I am a PhD Candidate (<strong>Prime Minister's Research Fellow</strong>) at the Centre for Ocean, 
+River, Atmosphere and Land Sciences (CORAL), 
+<a href="https://www.iitkgp.ac.in" target="_blank"><strong>Indian Institute of Technology Kharagpur</strong></a>, 
+India (2019 to present), working under the supervision of 
+<a href="https://www.iitkgp.ac.in/department/CL/faculty/cl-abhishek" target="_blank">Dr. Abhishek K. Rai</a>.
+<br><br>
+My research addresses the growing threat of <strong>climate extremes and associated natural hazards</strong> 
+in the Northwest Himalayan region of India, integrating statistical analysis, machine learning, 
+geospatial modelling, and hydrodynamic simulations to understand and anticipate disaster risk 
+in one of the world's most climate-sensitive landscapes.
+</div>
 
-<div class="conf-section-title">Major International Conferences</div>
+<div class="status-notice">
+  <strong>Currently:</strong> thesis submitted. Visiting <a href="https://engineering.purdue.edu/CCE" target="_blank">Purdue University</a>, USA
+  from October to November 2026 under the See D World fellowship, hosted by Prof. Venkatesh Merwade.
+</div>
 
-<div class="conf-card major">
-  <div class="conf-title">
-    <a href="https://ui.adsabs.harvard.edu/abs/2024AGUFMA23F.2044U" target="_blank">
-      Record Breaking Heatwave of 2022 over the Northwest Himalayas (NWH) of India
-    </a>
+<div class="about-section-title">PhD Research</div>
+
+<div class="research-card">
+The Himalayas are warming fast, and my work tries to understand what that means for the 
+people living downstream.
+<br><br>
+I study how heatwaves and extreme rainfall have changed across the Northwest Himalayas, 
+and where they are headed under future climate scenarios. From there, I look at what 
+these extremes trigger on the ground: unstable slopes, dangerous glacial lakes, and 
+catastrophic floods.
+<br><br>
+The work moves from atmosphere to hillslope to river valley, using climate models, 
+machine learning, remote sensing, and flood simulation to connect a warming climate 
+to real risks faced by Himalayan communities.
+
+<ul class="research-points">
+  <li>Investigated heatwaves, extreme precipitation, glacial lake outburst floods, and landslide susceptibility across the Northwest Himalayas</li>
+  <li>Applied MCDM to identify potentially dangerous glacial lakes and performed HEC-RAS 2D hydrodynamic modelling for glacial lake flood propagation</li>
+  <li>Applied machine learning methods (Random Forest, XGBoost, SVM) for spatial susceptibility mapping of landslides </li>
+  <li>Analysed CMIP6 projections under multiple SSP scenarios and applied causal discovery methods including PCMCI+</li>
+  <li>Processed satellite and reanalysis datasets including Landsat, Sentinel-2, MODIS, and ERA5 using Python and Google Earth Engine</li>
+  <li>Currently extending this work towards multi-phase mass flow simulation with r.avaflow and Sentinel-1 SAR time-series workflows in Google Earth Engine</li>
+
+</ul>
+</div>
+
+<div class="about-section-title">Education</div>
+
+<div class="edu-card highlight">
+  <div class="edu-degree">Ph.D. in Extreme Events and Natural Hazards</div>
+  <div class="edu-meta">IIT Kharagpur &nbsp;|&nbsp; 2019 to Present</div>
+  <div class="edu-note">Prime Minister's Research Fellow</div>
+</div>
+
+<div class="edu-card">
+  <div class="edu-degree">M.Sc. Applied Geology</div>
+  <div class="edu-meta">University of Mysore &nbsp;|&nbsp; 2017 to 2019</div>
+  <div class="edu-note">Gold Medallist &nbsp;·&nbsp; CGPA: 8.62</div>
+</div>
+
+<div class="edu-card">
+  <div class="edu-degree">M.Sc. Geoinformatics</div>
+  <div class="edu-meta">BIT Mesra, Ranchi &nbsp;|&nbsp; 2012 to 2014</div>
+  <div class="edu-note">CGPA: 8.64</div>
+</div>
+
+<div class="edu-card">
+  <div class="edu-degree">B.Sc. Hons. Geology</div>
+  <div class="edu-meta">University of Delhi &nbsp;|&nbsp; 2009 to 2012</div>
+</div>
+
+<div class="about-section-title">Work Experience</div>
+
+
+<div class="work-card featured">
+  <div class="work-title">Visiting Researcher <span class="work-flag">Upcoming</span></div>
+  <div class="work-org">Lyles School of Civil and Construction Engineering, Purdue University, USA &nbsp;|&nbsp; October to November 2026</div>
+  <ul class="work-points">
+    <li>Hosted by Prof. Venkatesh Merwade</li>
+    <li>Research on hydrology and climate, with a departmental seminar and collaboration meetings</li>
+  </ul>
+</div>
+
+<div class="work-card featured">
+  <div class="work-title">PhD Research Fellow</div>
+  <div class="work-org">IIT Kharagpur &nbsp;|&nbsp; July 2019 to Present</div>
+  <ul class="work-points">
+    <li>Statistical analysis and future projections of extreme climate events including heatwaves and extreme precipitation events in the NW Himalayas</li>
+    <li>MCDM-based GLOF susceptibility assessment and machine learning for landslide susceptibility mapping in the NW Himalayas</li>
+    <li>HEC-RAS 2D hydrodynamic modelling for glacial lake outburst flood propagation</li>
+  </ul>
+</div>
+
+<div class="work-card">
+  <div class="work-title">Consultant (Statistical Analyst)</div>
+  <div class="work-org">Ministry of Environment, Forest and Climate Change (MoEFCC), New Delhi &nbsp;|&nbsp; June to September 2025</div>
+  <ul class="work-points">
+    <li>Analysed global indices including the Environmental Performance Index and Climate Change Performance Index</li>
+    <li>Reviewed UN technical reports and provided statistical inputs for national climate assessments</li>
+  </ul>
+</div>
+
+<div class="work-card">
+  <div class="work-title">Junior Research Fellow</div>
+  <div class="work-org">G.B. Pant National Institute of Himalayan Environment, Almora &nbsp;|&nbsp; December 2014 to July 2015</div>
+  <ul class="work-points">
+    <li>Forest cover modelling using remote sensing and GIS for Manas Biosphere Reserve, Assam</li>
+  </ul>
+</div>
+
+<div class="about-section-title">Academic Achievements</div>
+
+<div class="achieve-wrapper">
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>SLET North East 2026</strong>
+      <span class="achieve-detail">Earth, Atmospheric, Ocean and Planetary Sciences · State Level Eligibility Test for Assistant Professor, North Eastern Region</span>
+    </div>
+    <div class="achieve-year">2026</div>
   </div>
-  <div class="conf-venue">AGU Fall Meeting, Washington DC, USA &nbsp;|&nbsp; December 9 to 13, 2024</div>
-  <span class="conf-badge badge-poster">Poster Presentation</span>
-  <span class="conf-badge badge-attended">Attended In-Person</span>
-  <div class="conf-desc">
-    Presented research on the record-breaking heatwave of 2022 over the Northwest Himalayas, 
-    examining its drivers and implications.
+
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>See D World Fellowship</strong>
+      <span class="achieve-detail">702 Scheme, IIT Kharagpur, supporting a research visit to Purdue University, USA</span>
+    </div>
+    <div class="achieve-year">2026</div>
   </div>
-  <div class="conf-cite">
-    Upadhyaya, A. and Rai, A. K. (2024). Record Breaking Heatwave of 2022 over the Northwest 
-    Himalayas (NWH) of India. <i>AGU Fall Meeting Abstracts</i>, A23F-2044. 
-    [<a href="https://ui.adsabs.harvard.edu/abs/2024AGUFMA23F.2044U" target="_blank">ADS</a>]
+
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>IAEG YEG Travel Grant</strong>
+      <span class="achieve-detail">Young Engineering Geologists Group, IAEG, for the 5th IAEG International Summer School, Aosta, Italy</span>
+    </div>
+    <div class="achieve-year">2026</div>
   </div>
-  <div class="conf-gallery">
-    <figure>
-      <img src="/images/conferences/agu-2024-01.jpg" alt="At the AGU Fall Meeting, Washington DC">
-      <figcaption>At the AGU Fall Meeting, Washington DC</figcaption>
-    </figure>
-    <figure>
-      <img src="/images/conferences/agu-2024-02.jpg" alt="At my poster during the AGU poster session">
-      <figcaption>At my poster during the session</figcaption>
-    </figure>
+
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>Best Oral Presentation Award</strong>
+      <span class="achieve-detail">Research Scholar Day, CORAL, IIT Kharagpur</span>
+    </div>
+    <div class="achieve-year">January 2024</div>
+  </div>
+
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>Prime Minister's Research Fellow</strong>
+      <span class="achieve-detail">Ministry of Education, Government of India</span>
+    </div>
+    <div class="achieve-year">December 2020</div>
+  </div>
+  
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>Gold Medal</strong>
+      <span class="achieve-detail">M.Sc. Applied Geology, University of Mysore</span>
+    </div>
+    <div class="achieve-year">2019</div>
+  </div>
+
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>GATE 2019</strong>
+      <span class="achieve-detail">All India Ranking 430, Score 487</span>
+    </div>
+    <div class="achieve-year">2019</div>
+  </div>
+
+  <div class="achieve-item">
+    <div class="achieve-text">
+      <strong>KSET 2018</strong>
+      <span class="achieve-detail">Karnataka State Eligibility Test for Lectureship</span>
+    </div>
+    <div class="achieve-year">2018</div>
   </div>
 </div>
 
-<div class="conf-card major">
-  <div class="conf-title">
-    <a href="https://doi.org/10.5194/egusphere-egu24-15032" target="_blank">
-      Identification of Potentially Dangerous Glacial Lakes (PDGLs) in the Northwest Himalayas
-    </a>
-  </div>
-  <div class="conf-venue">EGU General Assembly, Vienna, Austria &nbsp;|&nbsp; April 14 to 19, 2024</div>
-  <span class="conf-badge badge-poster">Poster Presentation</span>
-  <span class="conf-badge badge-attended">Attended In-Person</span>
-  <div class="conf-desc">
-    Presented findings on potentially dangerous glacial lakes in the Northwest Himalayas 
-    using multi-criteria hazard assessment.
-  </div>
-  <div class="conf-cite">
-    Upadhyaya, A. and Rai, A. K. (2024). Identification of Potentially Dangerous Glacial Lakes 
-    (PDGLs) in the Northwest Himalayas. <i>EGU General Assembly Conference Abstracts</i>, EGU24-15032. 
-    DOI: <a href="https://doi.org/10.5194/egusphere-egu24-15032" target="_blank">10.5194/egusphere-egu24-15032</a> 
-    &nbsp;|&nbsp; [<a href="https://ui.adsabs.harvard.edu/abs/2024EGUGA..2615032U" target="_blank">ADS</a>]
-  </div>
-  <div class="conf-gallery">
-    <figure>
-      <img src="/images/conferences/egu-2024-01.jpg" alt="At the EGU General Assembly, Vienna">
-      <figcaption>At the EGU General Assembly, Vienna</figcaption>
-    </figure>
-    <figure>
-      <img src="/images/conferences/egu-2024-02.jpg" alt="Discussing the poster with a visitor at EGU">
-      <figcaption>Talking through the poster with a visitor</figcaption>
-    </figure>
-  </div>
-</div>
+<div class="about-section-title">Skills</div>
 
-<div class="conf-section-title">Summer Schools & Workshops</div>
-
-<div class="conf-card major">
-  <div class="conf-title">
-    <a href="https://iaeg.info/" target="_blank">
-      5th IAEG International Summer School on Engineering Geology
-    </a>
+<div class="skills-grid">
+  <div class="skill-group">
+    <div class="skill-label">Programming</div>
+    <div class="skill-tags">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">R</span>
+    </div>
   </div>
-  <div class="conf-venue">Aosta, Italy &nbsp;|&nbsp; June 29 to July 7, 2026</div>
-  <span class="conf-badge badge-oral">Oral Presentation</span>
-  <span class="conf-badge badge-attended">Attended In-Person</span>
-  <span class="conf-badge badge-grant">YEG Travel Grant</span>
-  <div class="conf-desc">
-    Selected participant at the 5th IAEG International Summer School, supported by a Young Engineering
-    Geologists (YEG) Travel Grant from the International Association for Engineering Geology and the
-    Environment. Presented work on SAR-based flood mapping alongside field sessions on slope stability
-    and mass movement processes in the Aosta Valley.
+  <div class="skill-group">
+    <div class="skill-label">Python Libraries</div>
+    <div class="skill-tags">
+      <span class="skill-tag">scikit-learn</span>
+      <span class="skill-tag">pandas</span>
+      <span class="skill-tag">xarray</span>
+      <span class="skill-tag">rasterio</span>
+      <span class="skill-tag">matplotlib</span>
+      <span class="skill-tag">numpy</span>
+    </div>
   </div>
-</div>
-
-<div class="conf-section-title">National Conferences</div>
-
-<div class="conf-card">
-  <div class="conf-title">Record-breaking April to May 2024 Heatwave in West Bengal: Multi-parameter Assessment</div>
-  <div class="conf-venue">ISG-ISRS National Symposium 2025, IIT Kharagpur Research Park, Kolkata, India &nbsp;|&nbsp; November 25 to 27, 2025</div>
-  <span class="conf-badge badge-oral">Oral Presentation</span>
-  <div class="conf-desc">
-    Presented multi-parameter assessment of intensity, duration, and land-atmosphere anomalies 
-    during the record-breaking April to May 2024 heatwave in West Bengal.
+  <div class="skill-group">
+    <div class="skill-label">Geospatial Tools</div>
+    <div class="skill-tags">
+      <span class="skill-tag">ArcGIS</span>
+      <span class="skill-tag">QGIS</span>
+      <span class="skill-tag">SNAP</span>
+      <span class="skill-tag">Google Earth Engine</span>
+    </div>
   </div>
-</div>
-
-<div class="conf-card">
-  <div class="conf-title">Changing Patterns of Extreme Rainfall Events in the Northwest Himalayas</div>
-  <div class="conf-venue">Biodiversity and Climate Change (BDCC), IIT Kharagpur, India &nbsp;|&nbsp; February 16 to 19, 2023</div>
-  <span class="conf-badge badge-oral">Paper Presentation</span>
-  <div class="conf-desc">
-    Paper presentation on changing patterns of extreme rainfall events in the Northwest Himalayas.
+  <div class="skill-group">
+    <div class="skill-label">Satellite Data</div>
+    <div class="skill-tags">
+      <span class="skill-tag">Landsat</span>
+      <span class="skill-tag">Sentinel-2</span>
+      <span class="skill-tag">MODIS</span>
+      <span class="skill-tag">Sentinel-1 SAR</span>
+      <span class="skill-tag">ASTER DEM</span>
+      <span class="skill-tag">SRTM</span>
+      <span class="skill-tag">ALOS PALSAR</span>
+    </div>
+  </div>
+  <div class="skill-group">
+    <div class="skill-label">Reanalysis & Climate Data</div>
+    <div class="skill-tags">
+      <span class="skill-tag">ERA5</span>
+      <span class="skill-tag">ERA5-Land</span>
+      <span class="skill-tag">CMIP6</span>
+      <span class="skill-tag">SSP Scenarios</span>
+      <span class="skill-tag">Bias Correction</span>
+    </div>
+  </div>
+  <div class="skill-group">
+    <div class="skill-label">Modelling</div>
+    <div class="skill-tags">
+      <span class="skill-tag">MCDM</span>
+      <span class="skill-tag">HEC-RAS 2D</span>
+      <span class="skill-tag">r.avaflow</span>
+      <span class="skill-tag">Random Forest</span>
+      <span class="skill-tag">XGBoost</span>
+      <span class="skill-tag">SVM</span>
+      <span class="skill-tag">WRF</span>
+    </div>
+  </div>
+  <div class="skill-group">
+    <div class="skill-label">Other</div>
+    <div class="skill-tags">
+      <span class="skill-tag">DGPS Surveying</span>
+      <span class="skill-tag">High Performance Computing</span>
+    </div>
   </div>
 </div>
