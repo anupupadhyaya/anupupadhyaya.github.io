@@ -174,12 +174,12 @@ A record of conference presentations, workshops, and invited talks.
   </div>
   <div class="conf-gallery">
     <figure>
-      <img src="/images/conferences/agu-2024-01.jpg" alt="AGU Fall Meeting 2024, Washington DC">
-      <figcaption>Caption one</figcaption>
+      <img src="/images/conferences/agu-2024-01.jpg" alt="At the AGU Fall Meeting, Washington DC">
+      <figcaption>At the AGU Fall Meeting, Washington DC</figcaption>
     </figure>
     <figure>
-      <img src="/images/conferences/agu-2024-02.jpg" alt="Poster session, AGU 2024">
-      <figcaption>Caption two</figcaption>
+      <img src="/images/conferences/agu-2024-02.jpg" alt="At my poster during the AGU poster session">
+      <figcaption>At my poster during the session</figcaption>
     </figure>
   </div>
 </div>
@@ -205,12 +205,12 @@ A record of conference presentations, workshops, and invited talks.
   </div>
   <div class="conf-gallery">
     <figure>
-      <img src="/images/conferences/egu-2024-01.jpg" alt="EGU General Assembly 2024, Vienna">
-      <figcaption>Caption one</figcaption>
+      <img src="/images/conferences/egu-2024-01.jpg" alt="At the EGU General Assembly, Vienna">
+      <figcaption>At the EGU General Assembly, Vienna</figcaption>
     </figure>
     <figure>
-      <img src="/images/conferences/egu-2024-02.jpg" alt="Poster session, EGU 2024">
-      <figcaption>Caption two</figcaption>
+      <img src="/images/conferences/egu-2024-02.jpg" alt="Discussing the poster with a visitor at EGU">
+      <figcaption>Talking through the poster with a visitor</figcaption>
     </figure>
   </div>
 </div>
@@ -233,16 +233,6 @@ A record of conference presentations, workshops, and invited talks.
     Environment. Presented work on SAR-based flood mapping alongside field sessions on slope stability
     and mass movement processes in the Aosta Valley.
   </div>
-  <div class="conf-gallery">
-    <figure>
-      <img src="/images/conferences/iaeg-2026-01.jpg" alt="IAEG Summer School 2026, Aosta">
-      <figcaption>Caption one</figcaption>
-    </figure>
-    <figure>
-      <img src="/images/conferences/iaeg-2026-02.jpg" alt="Field session, Aosta Valley">
-      <figcaption>Caption two</figcaption>
-    </figure>
-  </div>
 </div>
 
 <div class="conf-section-title">National Conferences</div>
@@ -255,16 +245,6 @@ A record of conference presentations, workshops, and invited talks.
     Presented multi-parameter assessment of intensity, duration, and land-atmosphere anomalies 
     during the record-breaking April to May 2024 heatwave in West Bengal.
   </div>
-  <div class="conf-gallery">
-    <figure>
-      <img src="/images/conferences/isg-isrs-2025-01.jpg" alt="ISG-ISRS National Symposium 2025, Kolkata">
-      <figcaption>Caption one</figcaption>
-    </figure>
-    <figure>
-      <img src="/images/conferences/isg-isrs-2025-02.jpg" alt="Oral presentation, ISG-ISRS 2025">
-      <figcaption>Caption two</figcaption>
-    </figure>
-  </div>
 </div>
 
 <div class="conf-card">
@@ -273,15 +253,5 @@ A record of conference presentations, workshops, and invited talks.
   <span class="conf-badge badge-oral">Paper Presentation</span>
   <div class="conf-desc">
     Paper presentation on changing patterns of extreme rainfall events in the Northwest Himalayas.
-  </div>
-  <div class="conf-gallery">
-    <figure>
-      <img src="/images/conferences/bdcc-2023-01.jpg" alt="BDCC 2023, IIT Kharagpur">
-      <figcaption>Caption one</figcaption>
-    </figure>
-    <figure>
-      <img src="/images/conferences/bdcc-2023-02.jpg" alt="Paper presentation, BDCC 2023">
-      <figcaption>Caption two</figcaption>
-    </figure>
   </div>
 </div>
