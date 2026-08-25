@@ -294,8 +294,8 @@ in one of the world's most climate-sensitive landscapes.
 </div>
 
 <div class="status-notice">
-  <strong>Currently:</strong> thesis submitted. Visiting <a href="https://engineering.purdue.edu/CCE" target="_blank">Purdue University</a>
-  from September to December 2026 under the See D World fellowship, hosted by Prof. Venkatesh Merwade.
+  <strong>Currently:</strong> thesis submitted. Visiting <a href="https://engineering.purdue.edu/CCE" target="_blank">Purdue University</a>, USA
+  from October to November 2026 under the See D World fellowship, hosted by Prof. Venkatesh Merwade.
 </div>
 
 <div class="about-section-title">PhD Research</div>
@@ -354,10 +354,10 @@ to real risks faced by Himalayan communities.
 
 <div class="work-card featured">
   <div class="work-title">Visiting Researcher <span class="work-flag">Upcoming</span></div>
-  <div class="work-org">Lyles School of Civil and Construction Engineering, Purdue University, USA &nbsp;|&nbsp; September to December 2026</div>
+  <div class="work-org">Lyles School of Civil and Construction Engineering, Purdue University, USA &nbsp;|&nbsp; October to November 2026</div>
   <ul class="work-points">
-    <li>Hosted by Prof. Venkatesh Merwade under the See D World fellowship (702 Scheme), IIT Kharagpur</li>
-    <li>Independent research on hydrology and climate, with a departmental seminar and collaboration meetings</li>
+    <li>Hosted by Prof. Venkatesh Merwade</li>
+    <li>Research on hydrology and climate, with a departmental seminar and collaboration meetings</li>
   </ul>
 </div>
 
@@ -402,7 +402,7 @@ to real risks faced by Himalayan communities.
   <div class="achieve-item">
     <div class="achieve-text">
       <strong>See D World Fellowship</strong>
-      <span class="achieve-detail">702 Scheme, IIT Kharagpur, supporting a research visit to Purdue University</span>
+      <span class="achieve-detail">702 Scheme, IIT Kharagpur, supporting a research visit to Purdue University, USA</span>
     </div>
     <div class="achieve-year">2026</div>
   </div>
@@ -410,7 +410,7 @@ to real risks faced by Himalayan communities.
   <div class="achieve-item">
     <div class="achieve-text">
       <strong>IAEG YEG Travel Grant</strong>
-      <span class="achieve-detail">Young Engineering Geologists Group, IAEG, for the 5th IAEG International Summer School</span>
+      <span class="achieve-detail">Young Engineering Geologists Group, IAEG, for the 5th IAEG International Summer School, Aosta, Italy</span>
     </div>
     <div class="achieve-year">2026</div>
   </div>
