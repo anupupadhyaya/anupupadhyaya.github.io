@@ -114,45 +114,100 @@ author_profile: true
 }
 
 .conf-gallery {
-  display: flex;
-  gap: 10px;
-  margin-top: 14px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
 }
 
-.conf-gallery figure {
-  flex: 1 1 calc(50% - 5px);
-  min-width: 200px;
+@media (max-width: 600px) {
+  .conf-gallery { grid-template-columns: 1fr; }
+}
+
+.conf-shot {
   margin: 0;
 }
 
-.conf-gallery a {
+.conf-shot .shot-frame {
   display: block;
-  border-radius: 5px;
-  overflow: hidden;
-  border-bottom: none;
-}
-
-.conf-gallery img {
   width: 100%;
-  height: 190px;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: zoom-in;
+  background: rgba(128,128,128,0.08);
+}
+
+.conf-shot .shot-frame img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center 20%;
-  border-radius: 5px;
+  object-position: center 18%;
   display: block;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  margin: 0;
+  border-radius: 6px;
+  transition: transform 0.35s ease;
 }
 
-.conf-gallery a:hover img {
-  transform: scale(1.04);
-  filter: brightness(1.04);
+.conf-shot .shot-frame:hover img {
+  transform: scale(1.05);
 }
 
-.conf-gallery figcaption {
+.conf-cap {
   font-size: 0.75em;
   opacity: 0.55;
-  margin-top: 5px;
-  line-height: 1.4;
+  margin-top: 6px;
+  line-height: 1.45;
+}
+
+/* ── Lightbox ── */
+#lb-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.88);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: zoom-out;
+}
+
+#lb-overlay.open { display: flex; }
+
+#lb-overlay img {
+  max-width: 92vw;
+  max-height: 88vh;
+  border-radius: 4px;
+  transform-origin: center center;
+  transition: transform 0.12s ease-out;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#lb-overlay img.panning { cursor: grabbing; transition: none; }
+
+#lb-cap {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.82em;
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+#lb-hint {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  color: rgba(255,255,255,0.45);
+  font-size: 0.72em;
+  letter-spacing: 0.5px;
+  pointer-events: none;
 }
 
 .conf-desc {
@@ -187,18 +242,18 @@ A record of conference presentations, workshops, and invited talks.
     [<a href="https://ui.adsabs.harvard.edu/abs/2024AGUFMA23F.2044U" target="_blank">ADS</a>]
   </div>
   <div class="conf-gallery">
-    <figure>
-      <a href="/images/conferences/agu-2024-01.jpg" target="_blank" rel="noopener">
+    <div class="conf-shot">
+      <span class="shot-frame" data-full="/images/conferences/agu-2024-01.jpg" data-cap="At the AGU Fall Meeting, Washington DC">
         <img src="/images/conferences/agu-2024-01.jpg" alt="At the AGU Fall Meeting, Washington DC">
-      </a>
-      <figcaption>At the AGU Fall Meeting, Washington DC</figcaption>
-    </figure>
-    <figure>
-      <a href="/images/conferences/agu-2024-02.jpg" target="_blank" rel="noopener">
+      </span>
+      <div class="conf-cap">At the AGU Fall Meeting, Washington DC</div>
+    </div>
+    <div class="conf-shot">
+      <span class="shot-frame" data-full="/images/conferences/agu-2024-02.jpg" data-cap="At my poster during the session">
         <img src="/images/conferences/agu-2024-02.jpg" alt="At my poster during the AGU poster session">
-      </a>
-      <figcaption>At my poster during the session</figcaption>
-    </figure>
+      </span>
+      <div class="conf-cap">At my poster during the session</div>
+    </div>
   </div>
 </div>
 
@@ -222,18 +277,18 @@ A record of conference presentations, workshops, and invited talks.
     &nbsp;|&nbsp; [<a href="https://ui.adsabs.harvard.edu/abs/2024EGUGA..2615032U" target="_blank">ADS</a>]
   </div>
   <div class="conf-gallery">
-    <figure>
-      <a href="/images/conferences/egu-2024-01.jpg" target="_blank" rel="noopener">
+    <div class="conf-shot">
+      <span class="shot-frame" data-full="/images/conferences/egu-2024-01.jpg" data-cap="At the EGU General Assembly, Vienna">
         <img src="/images/conferences/egu-2024-01.jpg" alt="At the EGU General Assembly, Vienna">
-      </a>
-      <figcaption>At the EGU General Assembly, Vienna</figcaption>
-    </figure>
-    <figure>
-      <a href="/images/conferences/egu-2024-02.jpg" target="_blank" rel="noopener">
+      </span>
+      <div class="conf-cap">At the EGU General Assembly, Vienna</div>
+    </div>
+    <div class="conf-shot">
+      <span class="shot-frame" data-full="/images/conferences/egu-2024-02.jpg" data-cap="Talking through the poster with a visitor">
         <img src="/images/conferences/egu-2024-02.jpg" alt="Discussing the poster with a visitor at EGU">
-      </a>
-      <figcaption>Talking through the poster with a visitor</figcaption>
-    </figure>
+      </span>
+      <div class="conf-cap">Talking through the poster with a visitor</div>
+    </div>
   </div>
 </div>
 
@@ -256,18 +311,18 @@ A record of conference presentations, workshops, and invited talks.
     and mass movement processes in the Aosta Valley.
   </div>
   <div class="conf-gallery">
-    <figure>
-      <a href="/images/conferences/iaeg-2026-01.jpg" target="_blank" rel="noopener">
+    <div class="conf-shot">
+      <span class="shot-frame" data-full="/images/conferences/iaeg-2026-01.jpg" data-cap="At the IAEG Summer School, Aosta">
         <img src="/images/conferences/iaeg-2026-01.jpg" alt="At the 5th IAEG International Summer School, Aosta">
-      </a>
-      <figcaption>At the IAEG Summer School, Aosta</figcaption>
-    </figure>
-    <figure>
-      <a href="/images/conferences/iaeg-2026-02.jpg" target="_blank" rel="noopener">
+      </span>
+      <div class="conf-cap">At the IAEG Summer School, Aosta</div>
+    </div>
+    <div class="conf-shot">
+      <span class="shot-frame" data-full="/images/conferences/iaeg-2026-02.jpg" data-cap="Field session in the Aosta Valley">
         <img src="/images/conferences/iaeg-2026-02.jpg" alt="Field session in the Aosta Valley">
-      </a>
-      <figcaption>Field session in the Aosta Valley</figcaption>
-    </figure>
+      </span>
+      <div class="conf-cap">Field session in the Aosta Valley</div>
+    </div>
   </div>
 </div>
 
@@ -291,3 +346,79 @@ A record of conference presentations, workshops, and invited talks.
     Paper presentation on changing patterns of extreme rainfall events in the Northwest Himalayas.
   </div>
 </div>
+
+<div id="lb-overlay">
+  <span id="lb-hint">scroll to zoom · click outside to close</span>
+  <img id="lb-img" src="" alt="">
+  <div id="lb-cap"></div>
+</div>
+
+<script>
+(function () {
+  var overlay = document.getElementById('lb-overlay');
+  var img     = document.getElementById('lb-img');
+  var cap     = document.getElementById('lb-cap');
+  var scale = 1, tx = 0, ty = 0, dragging = false, sx = 0, sy = 0;
+
+  function apply() {
+    img.style.transform = 'translate(' + tx + 'px,' + ty + 'px) scale(' + scale + ')';
+  }
+
+  function open(src, text) {
+    img.src = src;
+    cap.textContent = text || '';
+    scale = 1; tx = 0; ty = 0; apply();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    img.src = '';
+  }
+
+  document.querySelectorAll('.shot-frame').forEach(function (el) {
+    el.addEventListener('click', function () {
+      open(el.getAttribute('data-full'), el.getAttribute('data-cap'));
+    });
+  });
+
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) close();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) close();
+  });
+
+  overlay.addEventListener('wheel', function (e) {
+    if (!overlay.classList.contains('open')) return;
+    e.preventDefault();
+    var next = scale * (e.deltaY < 0 ? 1.15 : 1 / 1.15);
+    scale = Math.min(6, Math.max(1, next));
+    if (scale === 1) { tx = 0; ty = 0; }
+    apply();
+  }, { passive: false });
+
+  img.addEventListener('mousedown', function (e) {
+    if (scale === 1) return;
+    e.preventDefault();
+    dragging = true; sx = e.clientX - tx; sy = e.clientY - ty;
+    img.classList.add('panning');
+  });
+
+  window.addEventListener('mousemove', function (e) {
+    if (!dragging) return;
+    tx = e.clientX - sx; ty = e.clientY - sy; apply();
+  });
+
+  window.addEventListener('mouseup', function () {
+    dragging = false; img.classList.remove('panning');
+  });
+
+  img.addEventListener('dblclick', function () {
+    scale = 1; tx = 0; ty = 0; apply();
+  });
+})();
+</script>
