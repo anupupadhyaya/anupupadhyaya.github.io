@@ -293,7 +293,9 @@ I recently completed my PhD (<strong>Prime Minister's Research Fellow</strong>) 
 River, Atmosphere and Land Sciences (CORAL), 
 <a href="https://www.iitkgp.ac.in" target="_blank"><strong>Indian Institute of Technology Kharagpur</strong></a>, 
 India (2019 to 2026), under the supervision of 
-<a href="https://www.iitkgp.ac.in/department/CL/faculty/cl-abhishek" target="_blank">Dr. Abhishek K. Rai</a>.
+<a href="https://www.iitkgp.ac.in/department/CL/faculty/cl-abhishek" target="_blank">Dr. Abhishek K. Rai</a>. 
+I am currently a Visiting Researcher at 
+<a href="https://engineering.purdue.edu/CCE" target="_blank"><strong>Purdue University</strong></a>, USA.
 <br><br>
 My research addresses the growing threat of <strong>climate extremes and associated natural hazards</strong> 
 in the Northwest Himalayan region of India, integrating statistical analysis, machine learning, 
@@ -302,9 +304,9 @@ in one of the world's most climate-sensitive landscapes.
 </div>
 
 <div class="status-notice">
-  <strong>Currently:</strong> PhD defended in September 2026. Heading to
+  <strong>Currently:</strong> Visiting Researcher at the Lyles School of Civil and Construction Engineering,
   <a href="https://engineering.purdue.edu/CCE" target="_blank">Purdue University</a>, USA
-  for a research visit from October to November 2026.
+  (October to November 2026), hosted by Prof. Venkatesh Merwade.
 </div>
 
 <div class="about-section-title">PhD Research</div>
@@ -362,7 +364,7 @@ to real risks faced by Himalayan communities.
 
 
 <div class="work-card featured">
-  <div class="work-title">Visiting Researcher <span class="work-flag">Upcoming</span></div>
+  <div class="work-title">Visiting Researcher <span class="work-flag">Current</span></div>
   <div class="work-org">Lyles School of Civil and Construction Engineering, Purdue University, USA &nbsp;|&nbsp; October to November 2026</div>
   <div class="work-host">Hosted by Prof. Venkatesh Merwade</div>
   <ul class="work-points">
