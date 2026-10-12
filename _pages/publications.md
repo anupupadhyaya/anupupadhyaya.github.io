@@ -170,8 +170,8 @@ author_profile: true
 </style>
 
 <div class="pub-summary">
-  <div class="pub-count">8 Peer-Reviewed Publications</div>
-  <div class="pub-detail">5 as first author · 3 as co-author</div>
+  <div class="pub-count">9 Peer-Reviewed Publications</div>
+  <div class="pub-detail">6 as first author · 3 as co-author</div>
   <div class="pub-profiles">
     <a href="https://scholar.google.com/citations?user=aR0WS0wAAAAJ&hl=en" target="_blank">Google Scholar</a> ·
     <a href="https://orcid.org/0000-0001-9789-049X" target="_blank">ORCID</a>
@@ -179,6 +179,20 @@ author_profile: true
 </div>
 
 <div class="pub-section-title">First-Author Publications</div>
+
+<div class="pub-card first-author">
+  <div class="pub-title">
+    <a href="https://doi.org/10.1002/joc.70615" target="_blank">
+      Intensifying Heatwave Extremes in the Northwest Himalayas, India: Trends, Teleconnections, Causal Drivers, and CMIP6 Projections
+    </a>
+  </div>
+  <div class="pub-authors"><strong>Upadhyaya, A.</strong> &amp; Rai, A.K.</div>
+  <div class="pub-venue"><em>International Journal of Climatology</em>, e70615 (2026)</div>
+  <span class="pub-badge badge-first">First Author</span>
+  <div class="pub-links">
+    <a href="https://doi.org/10.1002/joc.70615" target="_blank">View Paper</a>
+  </div>
+</div>
 
 <div class="pub-card first-author">
   <div class="pub-title">
