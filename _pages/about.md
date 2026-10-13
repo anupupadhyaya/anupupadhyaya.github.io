@@ -286,6 +286,25 @@ redirect_from:
     gap: 4px;
   }
 }
+
+/* ── Animation ── */
+@keyframes fadeUp { from {opacity:0; transform:translateY(14px);} to {opacity:1; transform:none;} }
+.intro-text, .status-notice { animation: fadeUp 0.7s ease both; }
+.status-notice { animation-delay: 0.15s; }
+.reveal { opacity:0; transform:translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.in { opacity:1; transform:none; }
+.about-section-title { position: relative; }
+.about-section-title::after {
+  content:""; position:absolute; left:28px; bottom:-2px; height:2px; width:0;
+  background:#2a7ae2; transition: width 0.9s ease;
+}
+.about-section-title.in::after { width:60px; }
+.skill-tag { transition: transform 0.2s ease, background 0.2s ease; }
+.skill-tag:hover { transform: translateY(-2px); background: rgba(42,122,226,0.16); }
+@media (prefers-reduced-motion: reduce) {
+  .intro-text, .status-notice { animation:none; }
+  .reveal { opacity:1; transform:none; transition:none; }
+}
 </style>
 
 <div class="intro-text">
@@ -339,25 +358,25 @@ to real risks faced by Himalayan communities.
 
 <div class="edu-card highlight">
   <div class="edu-degree">Ph.D. in Extreme Events and Natural Hazards</div>
-  <div class="edu-meta">IIT Kharagpur &nbsp;|&nbsp; 2019 to 2026</div>
+  <div class="edu-meta">IIT Kharagpur</div>
   <div class="edu-note">Prime Minister's Research Fellow &nbsp;·&nbsp; Defended September 2026</div>
 </div>
 
 <div class="edu-card">
   <div class="edu-degree">M.Sc. Applied Geology</div>
-  <div class="edu-meta">University of Mysore &nbsp;|&nbsp; 2017 to 2019</div>
+  <div class="edu-meta">University of Mysore</div>
   <div class="edu-note">Gold Medallist &nbsp;·&nbsp; CGPA: 8.62</div>
 </div>
 
 <div class="edu-card">
   <div class="edu-degree">M.Sc. Geoinformatics</div>
-  <div class="edu-meta">BIT Mesra, Ranchi &nbsp;|&nbsp; 2012 to 2014</div>
+  <div class="edu-meta">BIT Mesra, Ranchi</div>
   <div class="edu-note">CGPA: 8.64</div>
 </div>
 
 <div class="edu-card">
   <div class="edu-degree">B.Sc. Hons. Geology</div>
-  <div class="edu-meta">University of Delhi &nbsp;|&nbsp; 2009 to 2012</div>
+  <div class="edu-meta">University of Delhi</div>
 </div>
 
 <div class="about-section-title">Work Experience</div>
@@ -540,3 +559,13 @@ to real risks faced by Himalayan communities.
     </div>
   </div>
 </div>
+
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.about-section-title,.research-card,.edu-card,.work-card,.achieve-item,.skill-group');
+  if(!('IntersectionObserver' in window)){return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
+  els.forEach(function(el,i){ if(!el.classList.contains('about-section-title')){el.classList.add('reveal');el.style.transitionDelay=(i%4*0.07)+'s';} io.observe(el);});
+})();
+</script>
