@@ -413,7 +413,7 @@ to real risks faced by Himalayan communities.
 
 <div class="work-card">
   <div class="work-title">Junior Research Fellow</div>
-  <div class="work-org">G.B. Pant National Institute of Himalayan Environment, Almora &nbsp;|&nbsp; December 2014 to July 2015</div>
+  <div class="work-org">G.B. Pant National Institute of Himalayan Environment, Almora &nbsp;|&nbsp; 7 months</div>
   <ul class="work-points">
     <li>Forest cover modelling using remote sensing and GIS for Manas Biosphere Reserve, Assam</li>
   </ul>
