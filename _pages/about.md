@@ -307,6 +307,8 @@ redirect_from:
 }
 </style>
 
+{% include hazard-banner.html %}
+
 <div class="intro-text">
 I recently completed my PhD (<strong>Prime Minister's Research Fellow</strong>) at the Centre for Ocean, 
 River, Atmosphere and Land Sciences (CORAL), 
@@ -413,7 +415,7 @@ to real risks faced by Himalayan communities.
 
 <div class="work-card">
   <div class="work-title">Junior Research Fellow</div>
-  <div class="work-org">G.B. Pant National Institute of Himalayan Environment, Almora &nbsp;|&nbsp; 7 months</div>
+  <div class="work-org">G.B. Pant National Institute of Himalayan Environment, Almora &nbsp;|&nbsp; 8 months</div>
   <ul class="work-points">
     <li>Forest cover modelling using remote sensing and GIS for Manas Biosphere Reserve, Assam</li>
   </ul>
