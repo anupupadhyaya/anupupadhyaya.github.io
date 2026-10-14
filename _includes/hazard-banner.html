@@ -1,6 +1,6 @@
 <div class="hz-banner" aria-label="Animated illustration of a glacial lake outburst flood moving down a Himalayan valley">
   <canvas id="hz-canvas"></canvas>
-  <div class="hz-label hz-tl">GLOF propagation &middot; flow depth</div>
+  <div class="hz-label hz-tl">GLOF &middot; flow depth</div>
   <div class="hz-label hz-tr" id="hz-clock">t = 00:00 h</div>
   <div class="hz-legend"><span>0 m</span><i></i><span>12 m</span></div>
 </div>
@@ -8,7 +8,7 @@
 <div class="hz-caption">Illustrative flood run and warming stripes &middot; not real model output</div>
 
 <style>
-.hz-banner { position: relative; height: 230px; border-radius: 8px 8px 0 0; overflow: hidden; background: #0b1424; margin: 0 0 0 28px; }
+.hz-banner { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; position: relative; height: 230px; border-radius: 8px 8px 0 0; overflow: hidden; background: #0b1424; margin: 0 0 0 28px; }
 .hz-banner canvas { width: 100%; height: 100%; display: block; }
 .hz-label { position: absolute; top: 10px; font: 600 11px/1 system-ui, sans-serif; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.75); }
 .hz-tl { left: 14px; } .hz-tr { right: 14px; text-transform: none; font-variant-numeric: tabular-nums; }
@@ -18,7 +18,15 @@
 .hz-stripes span { flex: 1; transform: scaleY(0); transform-origin: bottom; animation: hzGrow 0.5s ease forwards; }
 @keyframes hzGrow { to { transform: scaleY(1); } }
 .hz-caption { margin: 4px 0 1.4em 28px; font-size: 0.72em; opacity: 0.5; color: var(--global-text-color); }
-@media (max-width: 600px) { .hz-banner, .hz-stripes, .hz-caption { margin-left: 0; } .hz-banner { height: 180px; } }
+@media (max-width: 600px) {
+  .hz-banner, .hz-stripes, .hz-caption { margin-left: 0; }
+  .hz-banner { height: 180px; }
+  .hz-banner .hz-label { font-size: 9px !important; letter-spacing: 1px; top: 8px; }
+  .hz-banner .hz-tl { left: 10px; } .hz-banner .hz-tr { right: 10px; }
+  .hz-banner .hz-legend { font-size: 8px !important; right: 10px; bottom: 8px; }
+  .hz-banner .hz-legend i { width: 50px; height: 4px; }
+  .hz-caption { font-size: 0.65em; }
+}
 @media (prefers-reduced-motion: reduce) { .hz-stripes span { animation: none; transform: none; } }
 </style>
 
